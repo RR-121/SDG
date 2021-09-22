@@ -26,8 +26,11 @@ class Game {
             form = new Form();
             form.display();
         }
+    }
 
-        trex = createSprite(displayWidth/2 - 10, displayHeight/2 - 140);
-        // trex.addAnimation("Running", trunning);
+    tutorial() {///
+        background(255, 255, 255);///
+        trex.velocityX = 0.5;///
+        trex.velocityY = 0.5;///
     }
 }
