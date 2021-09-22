@@ -1,6 +1,6 @@
 class Form {
     constructor() {
-        this.input = createInput(" ").attribute("placeholder", "Name");
+        this.input = createInput("Name").attribute("placeholder", "Name");
         this.play = createButton("Play");
         this.title = createElement('h2');
         this.reset = createButton("Reset database");
@@ -15,11 +15,11 @@ class Form {
     }
     display() {
         this.title.html("TBD");
-        this.title.position(displayWidth / 2 - 10, 50);
+        this.title.position(displayWidth / 2, 50);
 
-        this.input.position(displayWidth / 2 - 30 - 10, displayHeight / 2 - 140);
-        this.play.position(displayWidth / 2 + 90 - 10, displayHeight / 2 + 30 - 140);
-        this.reset.position(displayWidth / 2 - 30 - 10, displayHeight / 2 + 30 - 140);
+        this.input.position(displayWidth / 2 - 30, displayHeight / 2 - 130);
+        this.play.position(displayWidth / 2 + 90, displayHeight / 2 + 30 - 130);
+        this.reset.position(displayWidth / 2 - 30, displayHeight / 2 + 30 - 130);
 
         this.play.mousePressed(() => {
             this.input.hide();
@@ -33,7 +33,7 @@ class Form {
             player.update();
 
             this.greeting.html("Welcome " + player.name + "!");
-            this.greeting.position(displayWidth / 2 - 60 - 10, displayHeight / 2 - 140);
+            this.greeting.position(displayWidth / 2 - 60, displayHeight / 2 - 130);
         })
 
         this.reset.mousePressed(() => {
