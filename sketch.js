@@ -1,6 +1,7 @@
 var form, player, game, database, trex, trunning, bg_gs0, vid;
 var playerCount = 0;
 var gameState = 0;
+var vidComplete = 0;
 
 function preload() {
   // trunning = loadAnimation("Images/trex1.png", "Images/trex2.png", "Images/trex3.png");
@@ -40,18 +41,31 @@ function draw() {
     // trex.visible = true;
   }
 
-  if(gameState === 1) {
+  if (gameState === 1) {
+    background(255, 255, 255);
+
     vid.show();
-    game.tutorial();
+    vid.play();
+    vid.position(0, 0)
+
     vid.onended(() => {
       vid.stop();
       vid.hide();
-      game.updateS(2);
-      game.getState();
+      vidComplete += 1;
+      game.updateVid(vidComplete);
+      game.getVidStatus();
+      if (vidComplete === 4) {
+        vid.stop();
+        vid.hide();
+        game.updateS(2);
+        game.getState();
+      }
     });
   }
 
-  if(gameState === 2) {
+  if (gameState === 2) {
+    vid.stop();
+    vid.hide();
     game.play();
   }
 
