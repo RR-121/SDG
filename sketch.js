@@ -1,10 +1,13 @@
-var form, player, game, database, trex, trunning, bg_gs0;
+var form, player, game, database, trex, trunning, bg_gs0, vid;
 var playerCount = 0;
 var gameState = 0;
 
 function preload() {
-  trunning = loadAnimation("Images/trex1.png", "Images/trex2.png", "Images/trex3.png");///
-  bg_gs0 = loadImage("Images/Background.png");///
+  // trunning = loadAnimation("Images/trex1.png", "Images/trex2.png", "Images/trex3.png");
+  bg_gs0 = loadImage("Images/Background.png");
+  vid = createVideo("Video/xyz.mp4");
+  vid.size(displayWidth, displayHeight - 130);
+  vid.hide();
 }
 
 function setup() {
@@ -17,9 +20,9 @@ function setup() {
   game.getState();
   game.start();
 
-  trex = createSprite(displayWidth / 2, displayHeight / 2, 100, 100);///
-  trex.addAnimation("Running", trunning);///
-  trex.visible = false;///
+  // trex = createSprite(displayWidth / 2, displayHeight / 2, 100, 100);
+  // trex.addAnimation("Running", trunning);
+  // trex.visible = false;
 
   // vid = createVideo("Video/abc.mp4");
   // vid.play();
@@ -30,18 +33,29 @@ function draw() {
   background(255, 255, 255);
 
   if (gameState === 0)
-    background(bg_gs0);///
+    background(bg_gs0);
 
-  if (playerCount === 4) {
-    game.update(1);
-    trex.visible = true;///
-    game.tutorial();///
+  if (playerCount === 4 && gameState === 0) {
+    game.updateS(1);
+    // trex.visible = true;
   }
+
+  if(gameState === 1) {
+    vid.show();
+    game.tutorial();
+    vid.onended(() => {
+      vid.stop();
+      vid.hide();
+      game.updateS(2);
+      game.getState();
+    });
+  }
+
+  if(gameState === 2) {
+    game.play();
+  }
+
+  game.hideFormAfterGS0();
 
   drawSprites();
 }
-
-// function vidLoad() {
-//   vid.loop();
-//   vid.size(200, 200);
-// }
