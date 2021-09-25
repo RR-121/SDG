@@ -33,19 +33,22 @@ class Game {
             form.hideContents();
         }
     }
-
-    tutorial() {
-        background(255, 255, 255);
-        // trex.velocityX = 0.5;
-        // trex.velocityY = 0.5;
-
-        vid.play();
-        vid.position(0, 0)
-
-    }
-
+    
     play() {
         background(0);
 
+    }
+
+    getVidStatus() {
+        var GVSRef = database.ref('VideoWatchedNo');
+        GVSRef.on("value", (data) => {
+            vidComplete = data.val();
+        });
+    }
+
+    updateVid(data) {
+        database.ref('/').update({
+            VideoWatchedNo: data
+        });
     }
 }
