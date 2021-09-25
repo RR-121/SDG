@@ -39,7 +39,10 @@ class Form {
         this.reset.mousePressed(() => {
             playerCount = 0;
             player.updateCount(playerCount);
-            game.updateS(0);
+            gameState = 0;
+            game.updateS(gameState);
+            vidComplete = 0;
+            game.updateVid(vidComplete);
         })
     }
 }
