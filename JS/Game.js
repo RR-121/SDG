@@ -10,7 +10,7 @@ class Game {
         })
     }
 
-    update(state) {
+    updateS(state) {
         database.ref('/').update({
             gameState: state
         });
@@ -28,9 +28,24 @@ class Game {
         }
     }
 
-    tutorial() {///
-        background(255, 255, 255);///
-        trex.velocityX = 0.5;///
-        trex.velocityY = 0.5;///
+    hideFormAfterGS0() {
+        if (gameState > 0) {
+            form.hideContents();
+        }
+    }
+
+    tutorial() {
+        background(255, 255, 255);
+        // trex.velocityX = 0.5;
+        // trex.velocityY = 0.5;
+
+        vid.play();
+        vid.position(0, 0)
+
+    }
+
+    play() {
+        background(0);
+
     }
 }
