@@ -6,7 +6,7 @@ class Form {
         this.reset = createButton("Reset database");
         this.greeting = createElement('h3');
     }
-    hideThings() {
+    hideContents() {
         this.input.hide();
         this.play.hide();
         this.title.hide();
@@ -39,7 +39,7 @@ class Form {
         this.reset.mousePressed(() => {
             playerCount = 0;
             player.updateCount(playerCount);
-            game.update(0);
+            game.updateS(0);
         })
     }
 }
