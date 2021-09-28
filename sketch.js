@@ -1,7 +1,9 @@
-var form, player, game, database, trex, trunning, bg_gs0, vid;
+var form, player, game, database;
+var trex, trunning, bg_gs0, vid;
+var p1, p2, p3, p4, allPlayers, players;
 var playerCount = 0;
 var gameState = 0;
-var vidComplete = 0;
+// var vidComplete = 0;
 
 function preload() {
   // trunning = loadAnimation("Images/trex1.png", "Images/trex2.png", "Images/trex3.png");
@@ -20,14 +22,6 @@ function setup() {
   game = new Game();
   game.getState();
   game.start();
-
-  // trex = createSprite(displayWidth / 2, displayHeight / 2, 100, 100);
-  // trex.addAnimation("Running", trunning);
-  // trex.visible = false;
-
-  // vid = createVideo("Video/abc.mp4");
-  // vid.play();
-  // vid.size(300, 200);
 }
 
 function draw() {
@@ -38,7 +32,6 @@ function draw() {
 
   if (playerCount === 4 && gameState === 0) {
     game.updateS(1);
-    // trex.visible = true;
   }
 
   if (gameState === 1) {
@@ -51,10 +44,14 @@ function draw() {
     vid.onended(() => {
       vid.stop();
       vid.hide();
-      vidComplete += 1;
-      game.updateVid(vidComplete);
-      game.getVidStatus();
-      if (vidComplete === 4) {
+      // vidComplete += 1;
+      player.videoEnded = true;
+      player.update();
+      Player.getPlayerInfo();
+      // Player.updateVid(vidComplete);
+      // player.getVidStatus();
+      if (player.videoEnded === true) {
+        console.log("Done");
         vid.stop();
         vid.hide();
         game.updateS(2);
@@ -68,6 +65,8 @@ function draw() {
     vid.hide();
     game.play();
   }
+
+  console.log();
 
   game.hideFormAfterGS0();
 
