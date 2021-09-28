@@ -2,8 +2,9 @@ class Player {
     constructor() {
         this.index = null;
         this.name = null
-        this.positionX = null;
-        this.positionY = null;
+        this.posX = 0;
+        this.posY = 0;
+        this.videoEnded = false;
     }
 
     getCount() {
@@ -23,9 +24,30 @@ class Player {
         var playerIndex = "players/player" + this.index;
         database.ref(playerIndex).set({
             name: this.name,
-            index: this.index
+            index: this.index,
+            x: this.posX,
+            y: this.posY,
+            videoEnded: this.videoEnded
         });
     }
 
+    static getPlayerInfo() {
+        database.ref('players').on('value', (data) => {
+            allPlayers = data.val();
+        })
+    }
+
+    getVidStatus() {
+        var GVSRef = database.ref('VideoWatchedNo');
+        GVSRef.on("value", (data) => {
+            vidComplete = data.val();
+        });
+    }
+
+    static updateVid(data) {
+        database.ref('/').update({
+            VideoWatchedNo: data
+        });
+    }
 
 }
