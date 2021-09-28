@@ -26,6 +26,16 @@ class Game {
             form = new Form();
             form.display();
         }
+
+        p1 = createSprite(displayWidth / 2 - 100, displayHeight / 2 - 130);
+        p2 = createSprite(displayWidth / 2 + 100, displayHeight / 2 - 130);
+        p3 = createSprite(displayWidth / 2 - 100, displayHeight / 2);
+        p4 = createSprite(displayWidth / 2 + 100, displayHeight / 2);
+        players = [p1, p2, p3, p4];
+        p1.visible = false;
+        p2.visible = false;
+        p3.visible = false;
+        p4.visible = false;
     }
 
     hideFormAfterGS0() {
@@ -33,22 +43,19 @@ class Game {
             form.hideContents();
         }
     }
-    
+
     play() {
         background(0);
 
-    }
+        Player.getPlayerInfo();
 
-    getVidStatus() {
-        var GVSRef = database.ref('VideoWatchedNo');
-        GVSRef.on("value", (data) => {
-            vidComplete = data.val();
-        });
-    }
+        var index = 0;
 
-    updateVid(data) {
-        database.ref('/').update({
-            VideoWatchedNo: data
-        });
+        p1.visible = true;
+        p2.visible = true;
+        p3.visible = true;
+        p4.visible = true;
+
+        drawSprites();
     }
 }
