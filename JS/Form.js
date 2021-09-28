@@ -41,8 +41,10 @@ class Form {
             player.updateCount(playerCount);
             gameState = 0;
             game.updateS(gameState);
-            vidComplete = 0;
-            game.updateVid(vidComplete);
+            // vidComplete = 0;
+            // game.updateVid(vidComplete);
+            player.videoEnded = false;
+            player.update();
         })
     }
 }
