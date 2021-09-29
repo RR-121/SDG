@@ -1,16 +1,18 @@
 var form, player, game, database;
-var trex, trunning, bg_gs0, vid;
+var bg_gs0, vid, p1Img, p2Img, p3Img, p4Img;
 var p1, p2, p3, p4, allPlayers, players;
 var playerCount = 0;
 var gameState = 0;
-// var vidComplete = 0;
 
 function preload() {
-  // trunning = loadAnimation("Images/trex1.png", "Images/trex2.png", "Images/trex3.png");
   bg_gs0 = loadImage("Images/Background.png");
   vid = createVideo("Video/xyz.mp4");
   vid.size(displayWidth, displayHeight - 130);
   vid.hide();
+  p1Img = loadImage("Images/p1.png");
+  p2Img = loadImage("Images/p2.png");
+  p3Img = loadImage("Images/p3.png");
+  p4Img = loadImage("Images/p4.png");
 }
 
 function setup() {
@@ -44,20 +46,22 @@ function draw() {
     vid.onended(() => {
       vid.stop();
       vid.hide();
-      // vidComplete += 1;
       player.videoEnded = true;
       player.update();
-      Player.getPlayerInfo();
-      // Player.updateVid(vidComplete);
-      // player.getVidStatus();
-      if (player.videoEnded === true) {
-        console.log("Done");
-        vid.stop();
-        vid.hide();
-        game.updateS(2);
-        game.getState();
-      }
     });
+    Player.getPlayerInfo();
+    var completed = 0;
+    for (var plr in allPlayers) {
+      if (allPlayers[plr].videoEnded === true) {
+        completed += 1;
+      }
+    }
+    if (completed === 4) {
+      vid.stop();
+      vid.hide();
+      game.updateS(2);
+      game.getState();
+    }
   }
 
   if (gameState === 2) {
@@ -65,8 +69,6 @@ function draw() {
     vid.hide();
     game.play();
   }
-
-  console.log();
 
   game.hideFormAfterGS0();
 
