@@ -36,18 +36,4 @@ class Player {
             allPlayers = data.val();
         })
     }
-
-    getVidStatus() {
-        var GVSRef = database.ref('VideoWatchedNo');
-        GVSRef.on("value", (data) => {
-            vidComplete = data.val();
-        });
-    }
-
-    static updateVid(data) {
-        database.ref('/').update({
-            VideoWatchedNo: data
-        });
-    }
-
 }
