@@ -37,8 +37,8 @@ class Game {
         stair4.shapeColor = "silver";
         stair5 = createSprite(-260, 527, 5, 132);
         stair5.shapeColor = "lightGrey";
-        stair6 = createSprite(-230, 527, 5, 132);   
-        stair6.shapeColor = "lightGrey";  
+        stair6 = createSprite(-230, 527, 5, 132);
+        stair6.shapeColor = "lightGrey";
 
         lab_stair1 = createSprite(3366, 607, 5, 132);
         lab_stair1.shapeColor = "dimGrey";
@@ -50,9 +50,9 @@ class Game {
         lab_stair4.shapeColor = "silver";
         lab_stair5 = createSprite(3486, 607, 5, 132);
         lab_stair5.shapeColor = "lightGrey";
-        lab_stair6 = createSprite(3516, 607, 5, 132);   
-        lab_stair6.shapeColor = "lightGrey";  
-        
+        lab_stair6 = createSprite(3516, 607, 5, 132);
+        lab_stair6.shapeColor = "lightGrey";
+
         p1 = createSprite(displayWidth / 2 - 100, displayHeight / 2 - 130);
         p1.addImage(p1Img);
         p2 = createSprite(displayWidth / 2 + 100, displayHeight / 2 - 130);
@@ -62,10 +62,6 @@ class Game {
         p4 = createSprite(displayWidth / 2 + 100, displayHeight / 2);
         p4.addImage(p4Img);
 
-        // r1_lw = createSprite(-400, -105, 10, 700);
-        // r1_lw.shapeColor = "white";
-        // r1_uw = createSprite(-100, -450, 600, 10);
-        // r1_uw.shapeColor = "white";
         r1_rw = createSprite(200, -105, 10, 700);
         r1_rw.shapeColor = "white";
         r1_bw = createSprite(-200, 245, 410, 10);
@@ -75,8 +71,6 @@ class Game {
         r1_d = createSprite(55, 245, 100, 10);
         r1_d.shapeColor = "brown";
 
-        // r2_uw = createSprite(300, -450, 200, 10);
-        // r2_uw.shapeColor = "white";
         r2_rw = createSprite(400, -355, 10, 200);
         r2_rw.shapeColor = "white";
         r2_bw = createSprite(230, -260, 60, 10);
@@ -121,7 +115,7 @@ class Game {
         stairs_rw1 = createSprite(-212.5, 467, 15, 25);
         stairs_rw2 = createSprite(-212.5, 588, 15, 25);
         stairs_d = createSprite(-212.5, 526, 15, 100);
-        stairs_d.shapeColor = "darkGrey";  
+        stairs_d.shapeColor = "darkGrey";
 
         lab_stairs_lw = createSprite(3350, 605, 15, 150);
         lab_stairs_uw = createSprite(3440, 535, 200, 15);
@@ -137,7 +131,7 @@ class Game {
         house_bw.shapeColor = "darkGrey";
         house_rw = createSprite(2365, 295, 20, 1500);
         house_rw.shapeColor = "darkGrey";
-        house_uw1 = createSprite(305,-465, 1460, 20);
+        house_uw1 = createSprite(305, -465, 1460, 20);
         house_uw1.shapeColor = "darkGrey";
         house_uw2 = createSprite(1045, -450, 20, 50);
         house_uw2.shapeColor = "darkGrey";
@@ -199,14 +193,26 @@ class Game {
         background(0);
         Player.getPlayerInfo();
 
-        var index = 0;
-
         p1.visible = true;
         p2.visible = true;
         p3.visible = true;
         p4.visible = true;
 
+
+        for (var y = -90; y <= 200; y + 50) {
+            for (var x = 3350; x <= 3500; x + 50) {
+                f_1 = createSprite(x, y, 50, 50);
+                // f_1.shapeColor = "red";
+                lab_flooring.add(f_1);
+            }
+        }
+
+        // console.log(lab_flooring);
+
+
+
         var x, y;
+        var index = 0;
 
         for (var plr in allPlayers) {
             index += 1;
@@ -216,6 +222,25 @@ class Game {
 
             players[index - 1].x = x;
             players[index - 1].y = y;
+
+            if (x > 3350 && x < 3530 && y > 535 && y < 680) {
+                Player.getPlayerInfo();
+                fill("white");
+                console.log("HEllo");
+                text("Press 'space' to go up the stairs.", displayWidth / 2, displayHeight / 2);
+                player.posX = -170;
+                player.posY = 526;
+                player.update();
+            }
+            else if (x > -390 && x < -220 && y > 460 && y < 590) {
+                Player.getPlayerInfo();
+                fill("white");
+                console.log("HEllo from house");
+                text("Press 'space' to go down the stairs.", displayWidth / 2, displayHeight / 2);
+                player.posX = 3550;
+                player.posY = 606;
+                player.update();
+            }
 
             if (index === player.index) {
                 camera.position.x = players[index - 1].x;
@@ -234,6 +259,7 @@ class Game {
                 player.posX += 10;
             player.update();
         }
+
 
         drawSprites();
     }
