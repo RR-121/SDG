@@ -8,8 +8,9 @@ var stairs_lw, stairs_uw, stairs_bw, stairs_rw1, stairs_rw2, stairs_d, stair1, s
 var house_lw, house_rw, house_bw, house_uw1, house_uw2, house_uw3, house_uw4, house_md, lab_lw, lab_uw, lab_rw, lab_bw;
 var r5_lw, r5_uw1, r5_d, r5_uw2, r4_lw, r4_bw, r4_bw2, r4_bw3, r4_d, r4_bw4;
 var lab_stairs_lw, lab_stairs_uw, lab_stairs_bw, lab_stairs_rw1, lab_stairs_rw2, lab_stairs_d, lab_stair1, lab_stair2, lab_stair3, lab_stair4, lab_stair5, lab_stair6;
-var f_1, f_2, f_3, f_4, f_5, f6, f7, f8, f9, f10, f11, f12, f13, f14, f15, f16, f17, f18, f19, f20, f21, f22, f23, f24, f25, f26, f27, f28;
+// var f_1, f_2, f_3, f_4, f_5, f6, f7, f8, f9, f10, f11, f12, f13, f14, f15, f16, f17, f18, f19, f20, f21, f22, f23, f24, f25, f26, f27, f28;
 var lab_flooring;
+var p1_sr, p2_sr, p3_sr, p4_sr;
 
 function preload() {
   bg_gs0 = loadImage("Images/Background.png");
@@ -77,9 +78,12 @@ function draw() {
     vid.stop();
     vid.hide();
     game.play();
+    
   }
 
-  game.hideFormAfterGS0();
+  // game.hideFormAfterGS0();
+
+  
 
   drawSprites();
 }
