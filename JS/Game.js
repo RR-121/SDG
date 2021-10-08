@@ -62,6 +62,28 @@ class Game {
         p4 = createSprite(displayWidth / 2 + 100, displayHeight / 2);
         p4.addImage(p4Img);
 
+        p1.debug = true;
+        p1.setCollider("circle", 0, -3, 110);
+        p2.debug = true;
+        p2.setCollider("circle", 0, -3, 110);
+        p3.debug = true;
+        p3.setCollider("circle", 0, -3, 110);
+        p4.debug = true;
+        p4.setCollider("circle", 0, -3, 110);
+
+        p1_sr = createSprite(p1.x, p1.y, 90, 90);
+        p1_sr.setCollider("circle", 0, 0, 70);
+        p1_sr.visible = false;
+        p2_sr = createSprite(p2.x, p2.y, 90, 90);
+        p2_sr.setCollider("circle", 0, 0, 70);
+        p2_sr.visible = false;
+        p3_sr = createSprite(p3.x, p3.y, 90, 90);
+        p3_sr.setCollider("circle", 0, 0, 70);
+        p3_sr.visible = false;
+        p4_sr = createSprite(p4.x, p4.y, 90, 90);
+        p4_sr.setCollider("circle", 0, 0, 70);
+        p4_sr.visible = false;
+
         r1_rw = createSprite(200, -105, 10, 700);
         r1_rw.shapeColor = "white";
         r1_bw = createSprite(-200, 245, 410, 10);
@@ -151,25 +173,57 @@ class Game {
         lab_uw = createSprite(3615, -105, 575, 15);
         lab_uw.shapeColor = "whiteSmoke";
 
-        // r1_lw.visible = false;
-        // r1_uw.visible = false;
         // r1_rw.visible = false;
         // r1_bw.visible = false;
         // r1_bw2.visible = false;
         // r1_d.visible = false;
-        // r2_uw.visible = false;
         // r2_rw.visible = false;
         // r2_bw.visible = false;
         // r2_bw2.visible = false;
         // r2_d.visible = false;
-        // stairs_lw.visible = false;
-        // stairs_uw.visible = false;
+        // r3_d.visible = false;
+        // r3_rw.visible = false;
+        // r3_uw.visible = false;
+        // r4_bw.visible = false;
+        // r4_bw2.visible = false;
+        // r4_bw3.visible = false;
+        // r4_bw4.visible = false;
+        // r4_d.visible = false;
+        // r4_lw.visible = false;
+        // r5_d.visible = false;
+        // r5_lw.visible = false;
+        // r5_uw1.visible = false;
+        // r5_uw2.visible = false;
+        // r6_ld.visible = false;
+        // r6_lw.visible = false;
+        // r6_rd.visible = false;
+        // r6_rw.visible = false;
+        // r6_uw.visible = false;
+        // house_bw.visible = false;
+        // house_lw.visible = false;
+        // house_md.visible = false;
+        // house_rw.visible = false;
+        // house_uw1.visible = false;
+        // house_uw2.visible = false;
+        // house_uw3.visible = false;
+        // house_uw4.visible = false;
+        // lab_lw.visible = false;
+        // lab_rw.visible = false;
+        // lab_bw.visible = false;
+        // lab_uw.visible = false;
+        // lab_stairs_bw.visible = false;
+        // lab_stairs_d.visible = false;
+        // lab_stairs_lw.visible = false;
+        // lab_stairs_rw1.visible = false;
+        // lab_stairs_rw2.visible = false;
+        // lab_stairs_uw.visible = false;
         // stairs_bw.visible = false;
+        // stairs_d.visible = false;
         // stairs_lw.visible = false;
         // stairs_rw1.visible = false;
         // stairs_rw2.visible = false;
-        // stairs_d1.visible = false;
-        // stairs_d2.visible = false;
+        // stairs_uw.visible = false;
+
         push();
         p1.scale = 0.3;
         p2.scale = 0.3;
@@ -183,11 +237,11 @@ class Game {
         p4.visible = false;
     }
 
-    hideFormAfterGS0() {
-        if (gameState > 0) {
-            form.hideContents();
-        }
-    }
+    // hideFormAfterGS0() {
+    //     if (gameState > 0) {
+    //         form.hideContents();
+    //     }
+    // }
 
     play() {
         background(0);
@@ -198,14 +252,27 @@ class Game {
         p3.visible = true;
         p4.visible = true;
 
+        p1_sr.x = p1.x;
+        p1_sr.y = p1.y;
+        p2_sr.x = p2.x;
+        p2_sr.y = p2.y;
+        p3_sr.x = p3.x;
+        p3_sr.y = p3.y;
+        p4_sr.x = p4.x;
+        p4_sr.y = p4.y;
 
-        for (var y = -90; y <= 200; y + 50) {
-            for (var x = 3350; x <= 3500; x + 50) {
-                f_1 = createSprite(x, y, 50, 50);
-                // f_1.shapeColor = "red";
-                lab_flooring.add(f_1);
-            }
-        }
+        // if(p1_sr.isTouching(r1_d)) {
+        //     text("Press 'Space' to open the door", displayWith/2, displayHeight/2);
+        //     if()
+        // }
+
+        // for (var y = -90; y <= 200; y + 50) {
+        //     for (var x = 3350; x <= 3500; x + 50) {
+        //         var f_1 = createSprite(x, y, 50, 50);
+        //         // f_1.shapeColor = "red";
+        //         lab_flooring.add(f_1);
+        //     }
+        // }
 
         // console.log(lab_flooring);
 
@@ -259,6 +326,218 @@ class Game {
                 player.posX += 10;
             player.update();
         }
+
+
+        p1.bounceOff(p2);
+        p1.bounceOff(p3);
+        p1.bounceOff(p4);
+        p2.bounceOff(p3);
+        p2.bounceOff(p4);
+        p3.bounceOff(p4);
+
+        p1.bounceOff(r1_rw);
+        p1.bounceOff(r1_bw);
+        p1.bounceOff(r1_bw2);
+        p1.bounceOff(r1_d);
+        p1.bounceOff(r2_bw);
+        p1.bounceOff(r2_bw2);
+        p1.bounceOff(r2_d);
+        p1.bounceOff(r2_rw);
+        p1.bounceOff(r3_d);
+        p1.bounceOff(r3_rw);
+        p1.bounceOff(r3_uw);
+        p1.bounceOff(r4_bw);
+        p1.bounceOff(r4_bw2);
+        p1.bounceOff(r4_bw3);
+        p1.bounceOff(r4_bw4);
+        p1.bounceOff(r4_d);
+        p1.bounceOff(r4_lw);
+        p1.bounceOff(r5_d);
+        p1.bounceOff(r5_lw);
+        p1.bounceOff(r5_uw1);
+        p1.bounceOff(r5_uw2);
+        p1.bounceOff(r6_ld);
+        p1.bounceOff(r6_lw);
+        p1.bounceOff(r6_rd);
+        p1.bounceOff(r6_rw);
+        p1.bounceOff(r6_uw);
+        p1.bounceOff(stairs_bw);
+        p1.bounceOff(stairs_d);
+        p1.bounceOff(stairs_lw);
+        p1.bounceOff(stairs_rw1);
+        p1.bounceOff(stairs_rw2);
+        p1.bounceOff(stairs_uw);
+        p1.bounceOff(lab_stairs_bw);
+        p1.bounceOff(lab_stairs_d);
+        p1.bounceOff(lab_stairs_lw);
+        p1.bounceOff(lab_stairs_rw1);
+        p1.bounceOff(lab_stairs_rw2);
+        p1.bounceOff(lab_stairs_uw);
+        p1.bounceOff(house_bw);
+        p1.bounceOff(house_lw);
+        p1.bounceOff(house_md);
+        p1.bounceOff(house_rw);
+        p1.bounceOff(house_uw1);
+        p1.bounceOff(house_uw2);
+        p1.bounceOff(house_uw3);
+        p1.bounceOff(house_uw4);
+        p1.bounceOff(lab_uw);
+        p1.bounceOff(lab_bw);
+        p1.bounceOff(lab_rw);
+        p1.bounceOff(lab_lw);
+
+        p2.bounceOff(r1_rw);
+        p2.bounceOff(r1_bw);
+        p2.bounceOff(r1_bw2);
+        p2.bounceOff(r1_d);
+        p2.bounceOff(r2_bw);
+        p2.bounceOff(r2_bw2);
+        p2.bounceOff(r2_d);
+        p2.bounceOff(r2_rw);
+        p2.bounceOff(r3_d);
+        p2.bounceOff(r3_rw);
+        p2.bounceOff(r3_uw);
+        p2.bounceOff(r4_bw);
+        p2.bounceOff(r4_bw2);
+        p2.bounceOff(r4_bw3);
+        p2.bounceOff(r4_bw4);
+        p2.bounceOff(r4_d);
+        p2.bounceOff(r4_lw);
+        p2.bounceOff(r5_d);
+        p2.bounceOff(r5_lw);
+        p2.bounceOff(r5_uw1);
+        p2.bounceOff(r5_uw2);
+        p2.bounceOff(r6_ld);
+        p2.bounceOff(r6_lw);
+        p2.bounceOff(r6_rd);
+        p2.bounceOff(r6_rw);
+        p2.bounceOff(r6_uw);
+        p2.bounceOff(stairs_bw);
+        p2.bounceOff(stairs_d);
+        p2.bounceOff(stairs_lw);
+        p2.bounceOff(stairs_rw1);
+        p2.bounceOff(stairs_rw2);
+        p2.bounceOff(stairs_uw);
+        p2.bounceOff(lab_stairs_bw);
+        p2.bounceOff(lab_stairs_d);
+        p2.bounceOff(lab_stairs_lw);
+        p2.bounceOff(lab_stairs_rw1);
+        p2.bounceOff(lab_stairs_rw2);
+        p2.bounceOff(lab_stairs_uw);
+        p2.bounceOff(house_bw);
+        p2.bounceOff(house_lw);
+        p2.bounceOff(house_md);
+        p2.bounceOff(house_rw);
+        p2.bounceOff(house_uw1);
+        p2.bounceOff(house_uw2);
+        p2.bounceOff(house_uw3);
+        p2.bounceOff(house_uw4);
+        p2.bounceOff(lab_uw);
+        p2.bounceOff(lab_bw);
+        p2.bounceOff(lab_rw);
+        p2.bounceOff(lab_lw);
+
+        p3.bounceOff(r1_rw);
+        p3.bounceOff(r1_bw);
+        p3.bounceOff(r1_bw2);
+        p3.bounceOff(r1_d);
+        p3.bounceOff(r2_bw);
+        p3.bounceOff(r2_bw2);
+        p3.bounceOff(r2_d);
+        p3.bounceOff(r2_rw);
+        p3.bounceOff(r3_d);
+        p3.bounceOff(r3_rw);
+        p3.bounceOff(r3_uw);
+        p3.bounceOff(r4_bw);
+        p3.bounceOff(r4_bw2);
+        p3.bounceOff(r4_bw3);
+        p3.bounceOff(r4_bw4);
+        p3.bounceOff(r4_d);
+        p3.bounceOff(r4_lw);
+        p3.bounceOff(r5_d);
+        p3.bounceOff(r5_lw);
+        p3.bounceOff(r5_uw1);
+        p3.bounceOff(r5_uw2);
+        p3.bounceOff(r6_ld);
+        p3.bounceOff(r6_lw);
+        p3.bounceOff(r6_rd);
+        p3.bounceOff(r6_rw);
+        p3.bounceOff(r6_uw);
+        p3.bounceOff(stairs_bw);
+        p3.bounceOff(stairs_d);
+        p3.bounceOff(stairs_lw);
+        p3.bounceOff(stairs_rw1);
+        p3.bounceOff(stairs_rw2);
+        p3.bounceOff(stairs_uw);
+        p3.bounceOff(lab_stairs_bw);
+        p3.bounceOff(lab_stairs_d);
+        p3.bounceOff(lab_stairs_lw);
+        p3.bounceOff(lab_stairs_rw1);
+        p3.bounceOff(lab_stairs_rw2);
+        p3.bounceOff(lab_stairs_uw);
+        p3.bounceOff(house_bw);
+        p3.bounceOff(house_lw);
+        p3.bounceOff(house_md);
+        p3.bounceOff(house_rw);
+        p3.bounceOff(house_uw1);
+        p3.bounceOff(house_uw2);
+        p3.bounceOff(house_uw3);
+        p3.bounceOff(house_uw4);
+        p3.bounceOff(lab_uw);
+        p3.bounceOff(lab_bw);
+        p3.bounceOff(lab_rw);
+        p3.bounceOff(lab_lw);
+
+        p4.bounceOff(r1_rw);
+        p4.bounceOff(r1_bw);
+        p4.bounceOff(r1_bw2);
+        p4.bounceOff(r1_d);
+        p4.bounceOff(r2_bw);
+        p4.bounceOff(r2_bw2);
+        p4.bounceOff(r2_d);
+        p4.bounceOff(r2_rw);
+        p4.bounceOff(r3_d);
+        p4.bounceOff(r3_rw);
+        p4.bounceOff(r3_uw);
+        p4.bounceOff(r4_bw);
+        p4.bounceOff(r4_bw2);
+        p4.bounceOff(r4_bw3);
+        p4.bounceOff(r4_bw4);
+        p4.bounceOff(r4_d);
+        p4.bounceOff(r4_lw);
+        p4.bounceOff(r5_d);
+        p4.bounceOff(r5_lw);
+        p4.bounceOff(r5_uw1);
+        p4.bounceOff(r5_uw2);
+        p4.bounceOff(r6_ld);
+        p4.bounceOff(r6_lw);
+        p4.bounceOff(r6_rd);
+        p4.bounceOff(r6_rw);
+        p4.bounceOff(r6_uw);
+        p4.bounceOff(stairs_bw);
+        p4.bounceOff(stairs_d);
+        p4.bounceOff(stairs_lw);
+        p4.bounceOff(stairs_rw1);
+        p4.bounceOff(stairs_rw2);
+        p4.bounceOff(stairs_uw);
+        p4.bounceOff(lab_stairs_bw);
+        p4.bounceOff(lab_stairs_d);
+        p4.bounceOff(lab_stairs_lw);
+        p4.bounceOff(lab_stairs_rw1);
+        p4.bounceOff(lab_stairs_rw2);
+        p4.bounceOff(lab_stairs_uw);
+        p4.bounceOff(house_bw);
+        p4.bounceOff(house_lw);
+        p4.bounceOff(house_md);
+        p4.bounceOff(house_rw);
+        p4.bounceOff(house_uw1);
+        p4.bounceOff(house_uw2);
+        p4.bounceOff(house_uw3);
+        p4.bounceOff(house_uw4);
+        p4.bounceOff(lab_uw);
+        p4.bounceOff(lab_bw);
+        p4.bounceOff(lab_rw);
+        p4.bounceOff(lab_lw);
 
 
         drawSprites();
