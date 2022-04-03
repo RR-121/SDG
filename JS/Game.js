@@ -27,17 +27,17 @@ class Game {
             form.display();
         }
 
-        stair1 = createSprite(-380, 527, 5, 132);
+        stair1 = createSprite(-373.5, 527, 33, 132);
         stair1.shapeColor = "dimGrey";
-        stair2 = createSprite(-350, 527, 5, 132);
+        stair2 = createSprite(-339.5, 527, 33, 132);
         stair2.shapeColor = "grey";
-        stair3 = createSprite(-320, 527, 5, 132);
+        stair3 = createSprite(-305.5, 527, 33, 132);
         stair3.shapeColor = "darkGrey";
-        stair4 = createSprite(-290, 527, 5, 132);
+        stair4 = createSprite(-271.5, 527, 33, 132);
         stair4.shapeColor = "silver";
-        stair5 = createSprite(-260, 527, 5, 132);
-        stair5.shapeColor = "lightGrey";
-        stair6 = createSprite(-230, 527, 5, 132);
+        // stair5 = createSprite(-252, 527, 30.5, 132);
+        // stair5.shapeColor = rgb(200, 200, 200);
+        stair6 = createSprite(-237.5, 527, 33, 132);
         stair6.shapeColor = "lightGrey";
 
         lab_stair1 = createSprite(3366, 607, 5, 132);
@@ -3564,14 +3564,1009 @@ class Game {
             hfx -= 60;
         }
 
-        // console.log(hfx);
-        // console.log(hfy);
+        if (0.5 + 0.2 === 0.7) {
+            hfx2 = 1695;
+            hfy2 = -20;
 
-        // hfx2 = 1630;
-        // hfy2 = 300;
+            hf295 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf296 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf297 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf298 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf299 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hfy2 -= 12.5;
+            hf300 = createSprite(hfx2, hfy2, 60, 85);
+            hfx2 += 60;
+            hf301 = createSprite(hfx2, hfy2, 60, 85);
+            hfx2 += 60;
+            hf302 = createSprite(hfx2, hfy2, 60, 85);
+            hfx2 += 60;
+            hf303 = createSprite(hfx2, hfy2, 60, 85);
+            hfx2 += 60;
+            hf304 = createSprite(hfx2, hfy2, 60, 85);
+            hfx2 += 60;
+            hf305 = createSprite(hfx2, hfy2, 60, 85);
+            hfx2 += 45;
+            hf306 = createSprite(hfx2, hfy2, 30, 85);
 
-        // hf295
+            hfx2 = 1695;
+            hfy2 = -20 + 60;
 
+            hf307 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf308 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf309 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf310 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf311 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf312 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf313 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf314 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf315 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf316 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf317 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 45;
+            hf318 = createSprite(hfx2, hfy2, 30, 60);
+
+            hfx2 = 1695;
+            hfy2 += 60;
+
+            hf319 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf320 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf321 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf322 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf323 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf324 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf325 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf326 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf327 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf328 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf329 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 45;
+            hf330 = createSprite(hfx2, hfy2, 30, 60);
+
+            hfx2 = 1695;
+            hfy2 += 60;
+
+            hf331 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf332 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf333 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf334 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf335 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf336 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf337 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf338 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf339 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf340 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf341 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 45;
+            hf342 = createSprite(hfx2, hfy2, 30, 60);
+
+            hfx2 = 1695;
+            hfy2 += 60;
+
+            hf343 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf344 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf345 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf346 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf347 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf348 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf349 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf350 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf351 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf352 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf353 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 45;
+            hf354 = createSprite(hfx2, hfy2, 30, 60);
+
+            hfx2 = 1695;
+            hfy2 += 60;
+
+            hf355 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf356 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf357 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf358 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf359 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf360 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf361 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf362 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf363 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf364 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf365 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 45;
+            hf366 = createSprite(hfx2, hfy2, 30, 60);
+
+            hfx2 = 1695;
+            hfy2 += 50;
+
+            hf367 = createSprite(hfx2, hfy2, 60, 40);
+            hfx2 += 60;
+            hf368 = createSprite(hfx2, hfy2, 60, 40);
+            hfx2 += 60;
+            hf369 = createSprite(hfx2, hfy2, 60, 40);
+            hfx2 += 60;
+            hf370 = createSprite(hfx2, hfy2, 60, 40);
+            hfx2 += 60;
+            hf371 = createSprite(hfx2, hfy2, 60, 40);
+            hfx2 += 60;
+            hf372 = createSprite(hfx2, hfy2, 60, 40);
+            hfx2 += 60;
+            hf373 = createSprite(hfx2, hfy2, 60, 40);
+            hfx2 += 60;
+            hf374 = createSprite(hfx2, hfy2, 60, 40);
+            hfx2 += 60;
+            hf375 = createSprite(hfx2, hfy2, 60, 40);
+            hfx2 += 60;
+            hf376 = createSprite(hfx2, hfy2, 60, 40);
+            hfx2 += 60;
+            hf377 = createSprite(hfx2, hfy2, 60, 40);
+            hfx2 += 45;
+            hf378 = createSprite(hfx2, hfy2, 30, 40);
+
+            hfx2 = 1695 - 560;
+            hfy2 += 50;
+
+            hf381 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf382 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf383 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf384 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf385 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf386 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf387 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf388 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf389 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf390 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf391 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf392 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf393 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf394 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf395 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf396 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf397 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf398 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf399 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf400 = createSprite(hfx2, hfy2, 60, 60);
+
+            hfx2 = 1695 - 560;
+            hfy2 += 60;
+
+            hf401 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf402 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf403 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf404 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf405 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf406 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf407 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf408 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf409 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf410 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf411 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf412 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf413 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf414 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf415 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf416 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf417 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf418 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf419 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf420 = createSprite(hfx2, hfy2, 60, 60);
+
+            hfx2 = 1695 - 560;
+            hfy2 += 60;
+
+            hf421 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf422 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf423 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf424 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf425 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf426 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf427 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf428 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf429 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf430 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf431 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf432 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf433 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf434 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf435 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf436 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf437 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf438 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf439 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf440 = createSprite(hfx2, hfy2, 60, 60);
+
+            hfx2 = 1695 - 560;
+            hfy2 += 60;
+
+            hf441 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf442 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf443 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf444 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf445 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf446 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf447 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf448 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf449 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf450 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf451 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf452 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf453 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf454 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf455 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf456 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf457 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf458 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf459 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf460 = createSprite(hfx2, hfy2, 60, 60);
+
+            hfx2 = 1695 - 560;
+            hfy2 += 60;
+
+            hf461 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf462 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf463 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf464 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf465 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf466 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf467 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf468 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf469 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf470 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf471 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf472 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf473 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf474 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf475 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf476 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf477 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf478 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf479 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf480 = createSprite(hfx2, hfy2, 60, 60);
+
+            hfx2 = 1695 - 560;
+            hfy2 += 60;
+
+            hf481 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf482 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf483 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf484 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf485 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf486 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf487 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf488 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf489 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf490 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf491 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf492 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf493 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf494 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf495 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf496 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf497 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf498 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf499 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf500 = createSprite(hfx2, hfy2, 60, 60);
+
+            hfx2 = (1695 - 560) + (60 * 20) - 5;
+            hfy2 -= 60 * 5;
+
+            hf379 = createSprite(hfx2, hfy2, 50, 60);
+            hfy2 += 60;
+            hf380 = createSprite(hfx2, hfy2, 50, 60);
+            hfy2 += 60;
+            hf501 = createSprite(hfx2, hfy2, 50, 60);
+            hfy2 += 60;
+            hf502 = createSprite(hfx2, hfy2, 50, 60);
+            hfy2 += 60;
+            hf503 = createSprite(hfx2, hfy2, 50, 60);
+            hfy2 += 60;
+            hf504 = createSprite(hfx2, hfy2, 50, 60);
+            hfy2 += 60;
+
+            hfx2 = 1695 - 560;
+
+            hf505 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf506 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf507 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf508 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 57.5;
+            hf509 = createSprite(hfx2, hfy2, 55, 60);
+
+            hfx2 = 1695 - 560;
+            hfy2 += 60;
+
+            hf510 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf511 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf512 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf513 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 57.5;
+            hf514 = createSprite(hfx2, hfy2, 55, 60);
+
+            hfx2 = 1695 - 560;
+            hfy2 += 60;
+
+            hf515 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf516 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf517 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf518 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 57.5;
+            hf519 = createSprite(hfx2, hfy2, 55, 60);
+
+            hfx2 = 1695 - 560;
+            hfy2 += 60;
+
+            hf520 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf521 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf522 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf523 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 57.5;
+            hf524 = createSprite(hfx2, hfy2, 55, 60);
+
+            hfx2 = 1695 - 560;
+            hfy2 += 60;
+
+            hf525 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf526 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf527 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 60;
+            hf528 = createSprite(hfx2, hfy2, 60, 60);
+            hfx2 += 57.5;
+            hf529 = createSprite(hfx2, hfy2, 55, 60);
+
+            hfx2 = 1695 - 560;
+            hfy2 += 47.5;
+
+            hf525 = createSprite(hfx2, hfy2, 60, 35);
+            hfx2 += 60;
+            hf526 = createSprite(hfx2, hfy2, 60, 35);
+            hfx2 += 60;
+            hf527 = createSprite(hfx2, hfy2, 60, 35);
+            hfx2 += 60;
+            hf528 = createSprite(hfx2, hfy2, 60, 35);
+            hfx2 += 57.5;
+            hf529 = createSprite(hfx2, hfy2, 55, 35);
+        }
+
+        if (0.9999999999 * 1 === 0.9999999999) {
+            hfx3 = 237.5;
+            hfy3 = -225;
+
+            hf530 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65;
+            hf531 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65.5;
+            hf532 = createSprite(hfx3, hfy3, 66, 60);
+
+            hfx3 = 237.5;
+            hfy3 += 60;
+
+            hf533 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65;
+            hf534 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65.5;
+            hf535 = createSprite(hfx3, hfy3, 66, 60);
+
+            hfx3 = 237.5;
+            hfy3 += 60;
+
+            hf536 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65;
+            hf537 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65.5;
+            hf538 = createSprite(hfx3, hfy3, 66, 60);
+
+            hfx3 = 237.5;
+            hfy3 += 60;
+
+            hf539 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65;
+            hf540 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65.5;
+            hf541 = createSprite(hfx3, hfy3, 66, 60);
+
+            hfx3 = 237.5;
+            hfy3 += 60;
+
+            hf542 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65;
+            hf543 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65.5;
+            hf544 = createSprite(hfx3, hfy3, 66, 60);
+
+            hfx3 = 237.5;
+            hfy3 += 60;
+
+            hf545 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65;
+            hf546 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65.5;
+            hf547 = createSprite(hfx3, hfy3, 66, 60);
+
+            hfx3 = 237.5;
+            hfy3 += 60;
+
+            hf548 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65;
+            hf549 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65.5;
+            hf550 = createSprite(hfx3, hfy3, 66, 60);
+
+            hfx3 = 237.5;
+            hfy3 += 60;
+
+            hf551 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65;
+            hf552 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65.5;
+            hf553 = createSprite(hfx3, hfy3, 66, 60);
+
+            hfx3 = 237.5;
+            hfy3 += 60;
+
+            hf554 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65;
+            hf555 = createSprite(hfx3, hfy3, 65, 60);
+            hfx3 += 65.5;
+            hf556 = createSprite(hfx3, hfy3, 66, 60);
+
+            hfx3 = 237.5;
+            hfy3 += 62.5;
+
+            hf557 = createSprite(hfx3, hfy3, 65, 65);
+            hfx3 += 65;
+            hf558 = createSprite(hfx3, hfy3, 65, 65);
+            hfx3 += 65.5;
+            hf559 = createSprite(hfx3, hfy3, 66, 65);
+
+            hfx3 = -375;
+            hfy3 += -37.5;
+
+            hf560 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf561 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf562 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf563 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf564 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf565 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf566 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf567 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf568 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 65;
+            hf569 = createSprite(hfx3, hfy3, 70, 60);
+
+            hfx3 = -375;
+            hfy3 += 60;
+
+            hf570 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf571 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf572 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf573 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf574 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf575 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf576 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf577 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf578 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 65;
+            hf579 = createSprite(hfx3, hfy3, 70, 60);
+
+            hfx3 = -375;
+            hfy3 += 69;
+
+            hf570 = createSprite(hfx3, hfy3, 60, 78);
+            hfx3 += 60;
+            hf571 = createSprite(hfx3, hfy3, 60, 78);
+            hfx3 += 60;
+            hf572 = createSprite(hfx3, hfy3, 60, 78);
+            hfx3 += 60;
+            hf573 = createSprite(hfx3, hfy3, 60, 78);
+            hfx3 += 60;
+            hf574 = createSprite(hfx3, hfy3, 60, 78);
+            hfx3 += 60;
+            hf575 = createSprite(hfx3, hfy3, 60, 78);
+            hfx3 += 60;
+            hf576 = createSprite(hfx3, hfy3, 60, 78);
+            hfx3 += 60;
+            hf577 = createSprite(hfx3, hfy3, 60, 78);
+            hfx3 += 60;
+            hf578 = createSprite(hfx3, hfy3, 60, 78);
+            hfx3 += 65;
+            hf579 = createSprite(hfx3, hfy3, 70, 78);
+
+            hfx3 = -375 + 200;
+            hfy3 += 69;
+
+            hf570 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf571 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf572 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf573 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf574 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf575 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 54.5;
+            hf576 = createSprite(hfx3, hfy3, 51, 60);
+
+            hfx3 = -375 + 200;
+            hfy3 += 60;
+
+            hf577 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf578 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf579 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf580 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf581 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf582 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 54.5;
+            hf583 = createSprite(hfx3, hfy3, 51, 60);
+
+            hfx3 = -375 + 200;
+            hfy3 += 50;
+
+            hf584 = createSprite(hfx3, hfy3, 60, 40);
+            hfx3 += 60;
+            hf585 = createSprite(hfx3, hfy3, 60, 40);
+            hfx3 += 60;
+            hf586 = createSprite(hfx3, hfy3, 60, 40);
+            hfx3 += 60;
+            hf587 = createSprite(hfx3, hfy3, 60, 40);
+            hfx3 += 60;
+            hf588 = createSprite(hfx3, hfy3, 60, 40);
+            hfx3 += 60;
+            hf589 = createSprite(hfx3, hfy3, 60, 40);
+            hfx3 += 54.5;
+            hf590 = createSprite(hfx3, hfy3, 51, 40);
+
+            hfx3 = -375;
+            hfy3 += 49;
+
+            hf591 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf592 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf593 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf594 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf595 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf596 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf597 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf598 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf599 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 65;
+            hf600 = createSprite(hfx3, hfy3, 70, 60);
+
+            hfx3 = -375;
+            hfy3 += 60;
+
+            hf601 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf602 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf603 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf604 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf605 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf606 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf607 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf608 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf609 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 65;
+            hf610 = createSprite(hfx3, hfy3, 70, 60);
+
+            hfx3 = -375;
+            hfy3 += 64;
+
+            hf611 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf612 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf613 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf614 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf615 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf616 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf617 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf618 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf619 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 65;
+            hf620 = createSprite(hfx3, hfy3, 70, 68);
+
+            hfy3 -= 381;
+            hfx3 += 65;
+
+            hf621 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf622 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf623 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf624 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf625 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf626 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 45;
+            hf627 = createSprite(hfx3, hfy3, 30, 60);
+
+            hfy3 += 60;
+            hfx3 -= 345;
+
+            hf628 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf629 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf630 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf631 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf632 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf633 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 45;
+            hf634 = createSprite(hfx3, hfy3, 30, 60);
+
+            hfy3 += 60;
+            hfx3 -= 345;
+
+            hf635 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf636 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf637 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf638 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf639 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf640 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 45;
+            hf641 = createSprite(hfx3, hfy3, 30, 60);
+
+            hfy3 += 60;
+            hfx3 -= 345;
+
+            hf642 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf643 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf644 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf645 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf646 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf647 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 45;
+            hf648 = createSprite(hfx3, hfy3, 30, 60);
+
+            hfy3 += 60;
+            hfx3 -= 345;
+
+            hf649 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf650 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf651 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf652 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf653 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf654 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 45;
+            hf655 = createSprite(hfx3, hfy3, 30, 60);
+
+            hfy3 += 60;
+            hfx3 -= 345;
+
+            hf656 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf657 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf658 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf659 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf660 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf661 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 45;
+            hf662 = createSprite(hfx3, hfy3, 30, 60);
+
+            hfy3 += 60;
+            hfx3 -= 345;
+
+            hf663 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf664 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf665 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf666 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf667 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf668 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 45;
+            hf669 = createSprite(hfx3, hfy3, 30, 60);
+
+            hfx3 = 170 + 65;
+            hfy3 = 761;
+
+            hf671 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf672 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf673 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf674 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf675 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 60;
+            hf676 = createSprite(hfx3, hfy3, 60, 68);
+            hfx3 += 45;
+            hf677 = createSprite(hfx3, hfy3, 30, 68);
+
+            hfx3 -= 165;
+            hfy3 += 64;
+
+            hf678 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf679 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf680 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 45;
+            hf681 = createSprite(hfx3, hfy3, 30, 60);
+
+            hfx3 -= 165;
+            hfy3 += 60;
+
+            hf682 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf683 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf684 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 45;
+            hf685 = createSprite(hfx3, hfy3, 30, 60);
+
+            hfx3 -= 165;
+            hfy3 += 60;
+
+            hf686 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf687 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 60;
+            hf688 = createSprite(hfx3, hfy3, 60, 60);
+            hfx3 += 45;
+            hf689 = createSprite(hfx3, hfy3, 30, 60);
+
+            hfx3 -= 165;
+            hfy3 += 65;
+
+            hf690 = createSprite(hfx3, hfy3, 60, 70);
+            hfx3 += 60;
+            hf691 = createSprite(hfx3, hfy3, 60, 70);
+            hfx3 += 60;
+            hf692 = createSprite(hfx3, hfy3, 60, 70);
+            hfx3 += 45;
+            hf693 = createSprite(hfx3, hfy3, 30, 70);
+        }
 
         p1 = createSprite(displayWidth / 2 - 100, displayHeight / 2 - 130);
         p1.addImage(p1Img);
@@ -3643,18 +4638,24 @@ class Game {
         r4_bw4.shapeColor = "gainsboro";
 
         r5_lw = createSprite(1405, 885, 10, 350);
+        r5_lw.shapeColor = "darkGrey";
         r5_uw1 = createSprite(1430, 715, 50, 10);
+        r5_uw1.shapeColor = "darkGrey";
         r5_d = createSprite(1505, 715, 100, 10);
         r5_d.shapeColor = "sandyBrown";
         r5_uw2 = createSprite(1955, 715, 800, 10);
+        r5_uw2.shapeColor = "darkGrey";
 
         r6_ld = createSprite(600, 995, 10, 100);
         r6_ld.shapeColor = "saddleBrown";
         r6_rd = createSprite(1100, 995, 10, 100);
         r6_rd.shapeColor = "saddleBrown";
         r6_lw = createSprite(600, 650, 10, 600);
+        r6_lw.shapeColor = "darkGrey";
         r6_rw = createSprite(1100, 650, 10, 600);
+        r6_rw.shapeColor = "darkGrey";
         r6_uw = createSprite(850, 355, 500, 10);
+        r6_uw.shapeColor = "darkGrey";
 
         stairs_lw = createSprite(-397.5, 525, 15, 150);
         stairs_uw = createSprite(-305, 455, 200, 15);
@@ -3665,10 +4666,15 @@ class Game {
         stairs_d.shapeColor = "darkGrey";
 
         lab_stairs_lw = createSprite(3350, 605, 15, 150);
+        lab_stairs_lw.shapeColor = "dimGrey";
         lab_stairs_uw = createSprite(3440, 535, 200, 15);
+        lab_stairs_uw.shapeColor = "dimGrey";
         lab_stairs_bw = createSprite(3440, 680, 200, 15);
+        lab_stairs_bw.shapeColor = "dimGrey";
         lab_stairs_rw1 = createSprite(3532.5, 547, 15, 25);
+        lab_stairs_rw1.shapeColor = "dimGrey";
         lab_stairs_rw2 = createSprite(3532.5, 668, 15, 25);
+        lab_stairs_rw2.shapeColor = "dimGrey";
         lab_stairs_d = createSprite(3532.5, 606, 15, 100);
         lab_stairs_d.shapeColor = "darkGrey";
 
@@ -3698,56 +4704,56 @@ class Game {
         lab_uw = createSprite(3615, -105, 575, 15);
         lab_uw.shapeColor = "whiteSmoke";
 
-        // r1_rw.visible = false;
-        // r1_bw.visible = false;
-        // r1_bw2.visible = false;
-        // r1_d.visible = false;
-        // r2_rw.visible = false;
-        // r2_bw.visible = false;
-        // r2_bw2.visible = false;
-        // r2_d.visible = false;
-        // r3_d.visible = false;
-        // r3_rw.visible = false;
-        // r3_uw.visible = false;
-        // r4_bw.visible = false;
-        // r4_bw2.visible = false;
-        // r4_bw3.visible = false;
-        // r4_bw4.visible = false;
-        // r4_d.visible = false;
-        // r4_lw.visible = false;
-        // r5_d.visible = false;
-        // r5_lw.visible = false;
-        // r5_uw1.visible = false;
-        // r5_uw2.visible = false;
-        // r6_ld.visible = false;
-        // r6_lw.visible = false;
-        // r6_rd.visible = false;
-        // r6_rw.visible = false;
-        // r6_uw.visible = false;
-        // house_bw.visible = false;
-        // house_lw.visible = false;
-        // house_md.visible = false;
-        // house_rw.visible = false;
-        // house_uw1.visible = false;
-        // house_uw2.visible = false;
-        // house_uw3.visible = false;
-        // house_uw4.visible = false;
-        // lab_lw.visible = false;
-        // lab_rw.visible = false;
-        // lab_bw.visible = false;
-        // lab_uw.visible = false;
-        // lab_stairs_bw.visible = false;
-        // lab_stairs_d.visible = false;
-        // lab_stairs_lw.visible = false;
-        // lab_stairs_rw1.visible = false;
-        // lab_stairs_rw2.visible = false;
-        // lab_stairs_uw.visible = false;
-        // stairs_bw.visible = false;
-        // stairs_d.visible = false;
-        // stairs_lw.visible = false;
-        // stairs_rw1.visible = false;
-        // stairs_rw2.visible = false;
-        // stairs_uw.visible = false;
+        r1_rw.visible = false;
+        r1_bw.visible = false;
+        r1_bw2.visible = false;
+        r1_d.visible = false;
+        r2_rw.visible = false;
+        r2_bw.visible = false;
+        r2_bw2.visible = false;
+        r2_d.visible = false;
+        r3_d.visible = false;
+        r3_rw.visible = false;
+        r3_uw.visible = false;
+        r4_bw.visible = false;
+        r4_bw2.visible = false;
+        r4_bw3.visible = false;
+        r4_bw4.visible = false;
+        r4_d.visible = false;
+        r4_lw.visible = false;
+        r5_d.visible = false;
+        r5_lw.visible = false;
+        r5_uw1.visible = false;
+        r5_uw2.visible = false;
+        r6_ld.visible = false;
+        r6_lw.visible = false;
+        r6_rd.visible = false;
+        r6_rw.visible = false;
+        r6_uw.visible = false;
+        house_bw.visible = false;
+        house_lw.visible = false;
+        house_md.visible = false;
+        house_rw.visible = false;
+        house_uw1.visible = false;
+        house_uw2.visible = false;
+        house_uw3.visible = false;
+        house_uw4.visible = false;
+        lab_lw.visible = false;
+        lab_rw.visible = false;
+        lab_bw.visible = false;
+        lab_uw.visible = false;
+        lab_stairs_bw.visible = false;
+        lab_stairs_d.visible = false;
+        lab_stairs_lw.visible = false;
+        lab_stairs_rw1.visible = false;
+        lab_stairs_rw2.visible = false;
+        lab_stairs_uw.visible = false;
+        stairs_bw.visible = false;
+        stairs_d.visible = false;
+        stairs_lw.visible = false;
+        stairs_rw1.visible = false;
+        stairs_rw2.visible = false;
+        stairs_uw.visible = false;
 
         push();
         p1.scale = 0.3;
@@ -3762,11 +4768,11 @@ class Game {
         p4.visible = false;
     }
 
-//     hideFormAfterGS0() {
-//         if (gameState > 0) {
-//             form.hideContents();
-//         }
-//     }
+    hideFormAfterGS0() {
+        if (gameState > 0) {
+            form.hideContents();
+        }
+    }
 
     play() {
         background(0);
@@ -3786,29 +4792,6 @@ class Game {
         p4_sr.x = p4.x;
         p4_sr.y = p4.y;
 
-        if (p1_sr.isTouching(r1_d) || p1_sr.isTouching(r2_d) || p1_sr.isTouching(r3_d) || p1_sr.isTouching(r4_d) || p1_sr.isTouching(r5_d) || p1_sr.isTouching(r6_ld) || p1_sr.isTouching(r6_rd) || p1_sr.isTouching(stairs_d) || p1_sr.isTouching(lab_stairs_d) || p1_sr.isTouching(house_md)) {
-            text("Press 'Space' to open the door", displayWidth / 2, displayHeight / 2);
-            if (p1_sr.isTouching(r1_d) && keyCode === 32 && r1_d_open === false) {
-                r1_d.x += 10;
-                r1_d.y -= 50;
-                r1_d.width = 10;
-                r1_d.height = 100;
-                r1_d_open = true;
-            }
-            else if (p1_sr.isTouching(r1_d) && keyCode === 32 && r1_d_open === true) {
-                r1_d.x -= 10;
-                r1_d.y += 50;
-                r1_d.width = 100;
-                r1_d.height = 10;
-                r1_d_open = false;
-            }
-        }
-
-
-
-        // console.log(lab_flooring);
-
-
 
         var x, y;
         var index = 0;
@@ -3825,47 +4808,140 @@ class Game {
             if (x > 3350 && x < 3530 && y > 535 && y < 680) {
                 Player.getPlayerInfo();
                 fill("white");
-                console.log("HEllo");
                 text("Press 'space' to go up the stairs.", displayWidth / 2, displayHeight / 2);
-                player.posX = -170;
-                player.posY = 526;
-                player.update();
+                if (keyIsDown(32)) {
+                    player.posX = -170;
+                    player.posY = 526;
+                    player.update();
+                }
             }
             else if (x > -390 && x < -220 && y > 460 && y < 590) {
                 Player.getPlayerInfo();
                 fill("white");
-                console.log("HEllo from house");
                 text("Press 'space' to go down the stairs.", displayWidth / 2, displayHeight / 2);
-                player.posX = 3550;
-                player.posY = 606;
-                player.update();
+                if (keyIsDown(32)) {
+                    player.posX = 3550;
+                    player.posY = 606;
+                    player.update();
+                }
             }
 
             if (index === player.index) {
                 camera.position.x = players[index - 1].x;
                 camera.position.y = players[index - 1].y;
             }
-        }
 
-        if (player.index !== null) {
-            if (keyIsDown(UP_ARROW))
-                player.posY -= 10;
-            if (keyIsDown(DOWN_ARROW))
-                player.posY += 10;
-            if (keyIsDown(LEFT_ARROW))
-                player.posX -= 10;
-            if (keyIsDown(RIGHT_ARROW))
-                player.posX += 10;
-            player.update();
-        }
+            if (player.index === 1) {
+                if (keyIsDown(UP_ARROW)) {
+                    p1.velocityY = -3
+                    player.posY = p1.y;
+                    console.log();
+                }
+                if (keyIsDown(DOWN_ARROW)) {
+                    p1.velocityY = 3
+                    player.posY = p1.y
+                }
+                if (keyWentUp("up") || keyWentUp("down")) {
+                    p1.velocityY = 0;
+                    player.posY = p1.y
+                }
+                if (keyIsDown(LEFT_ARROW)) {
+                    p1.velocityX = -3
+                    player.posX = p1.x
+                }
+                if (keyIsDown(RIGHT_ARROW)) {
+                    p1.velocityX = 3
+                    player.posX = p1.x
+                }
+                if (keyWentUp("left") || keyWentUp("right")) {
+                    p1.velocityX = 0;
+                    player.posX = p1.x
+                }
+                player.update();
+            }
+            else if (player.index === 2) {
+                if (keyIsDown(UP_ARROW)) {
+                    p2.velocityY = -3
+                    player.posY = p2.y;
+                }
+                if (keyIsDown(DOWN_ARROW)) {
+                    p2.velocityY = 3
+                    player.posY = p2.y
+                }
+                if (keyWentUp("up") || keyWentUp("down")) {
+                    p2.velocityY = 0;
+                    player.posY = p2.y
+                }
+                if (keyIsDown(LEFT_ARROW)) {
+                    p2.velocityX = -3
+                    player.posX = p2.x
+                }
+                if (keyIsDown(RIGHT_ARROW)) {
+                    p2.velocityX = 3
+                    player.posX = p2.x
+                }
+                if (keyWentUp("left") || keyWentUp("right")) {
+                    p2.velocityX = 0;
+                    player.posX = p2.x
+                }
+                player.update();
+            }
+            else if (player.index === 3) {
+                if (keyIsDown(UP_ARROW)) {
+                    p3.velocityY = -3
+                    player.posY = p3.y;
+                }
+                if (keyIsDown(DOWN_ARROW)) {
+                    p3.velocityY = 3
+                    player.posY = p3.y
+                }
+                if (keyWentUp("up") || keyWentUp("down")) {
+                    p3.velocityY = 0;
+                    player.posY = p3.y
+                }
+                if (keyIsDown(LEFT_ARROW)) {
+                    p3.velocityX = -3
+                    player.posX = p3.x
+                }
+                if (keyIsDown(RIGHT_ARROW)) {
+                    p3.velocityX = 3
+                    player.posX = p3.x
+                }
+                if (keyWentUp("left") || keyWentUp("right")) {
+                    p3.velocityX = 0;
+                    player.posX = p3.x
+                }
+                player.update();
+            }
+            else if (player.index === 4) {
+                if (keyIsDown(UP_ARROW)) {
+                    p4.velocityY = -3
+                    player.posY = p4.y;
+                }
+                if (keyIsDown(DOWN_ARROW)) {
+                    p4.velocityY = 3
+                    player.posY = p4.y
+                }
+                if (keyWentUp("up") || keyWentUp("down")) {
+                    p4.velocityY = 0;
+                    player.posY = p4.y
+                }
+                if (keyIsDown(LEFT_ARROW)) {
+                    p4.velocityX = -3
+                    player.posX = p4.x
+                }
+                if (keyIsDown(RIGHT_ARROW)) {
+                    p4.velocityX = 3
+                    player.posX = p4.x
+                }
+                if (keyWentUp("left") || keyWentUp("right")) {
+                    p4.velocityX = 0;
+                    player.posX = p4.x
+                }
+                player.update();
+            }
 
-        // for (var y = -400; y <= -200; y + 50) {
-        //     for (var x = 1100; x <= 1300; x + 50) {
-        //         var f_1 = createSprite(x, y, 50, 50);
-        //         // f_1.shapeColor = "white";
-        //         lab_flooring.add(f_1);
-        //     }
-        // }
+        }
 
 
         p1.bounceOff(p2);
@@ -3878,37 +4954,37 @@ class Game {
         p1.bounceOff(r1_rw);
         p1.bounceOff(r1_bw);
         p1.bounceOff(r1_bw2);
-        p1.bounceOff(r1_d);
+        // p1.bounceOff(r1_d);
         p1.bounceOff(r2_bw);
         p1.bounceOff(r2_bw2);
-        p1.bounceOff(r2_d);
+        // p1.bounceOff(r2_d);
         p1.bounceOff(r2_rw);
-        p1.bounceOff(r3_d);
+        // p1.bounceOff(r3_d);
         p1.bounceOff(r3_rw);
         p1.bounceOff(r3_uw);
         p1.bounceOff(r4_bw);
         p1.bounceOff(r4_bw2);
         p1.bounceOff(r4_bw3);
         p1.bounceOff(r4_bw4);
-        p1.bounceOff(r4_d);
+        // p1.bounceOff(r4_d);
         p1.bounceOff(r4_lw);
-        p1.bounceOff(r5_d);
+        // p1.bounceOff(r5_d);
         p1.bounceOff(r5_lw);
         p1.bounceOff(r5_uw1);
         p1.bounceOff(r5_uw2);
-        p1.bounceOff(r6_ld);
+        // p1.bounceOff(r6_ld);
         p1.bounceOff(r6_lw);
-        p1.bounceOff(r6_rd);
+        // p1.bounceOff(r6_rd);
         p1.bounceOff(r6_rw);
         p1.bounceOff(r6_uw);
         p1.bounceOff(stairs_bw);
-        p1.bounceOff(stairs_d);
+        // p1.bounceOff(stairs_d);
         p1.bounceOff(stairs_lw);
         p1.bounceOff(stairs_rw1);
         p1.bounceOff(stairs_rw2);
         p1.bounceOff(stairs_uw);
         p1.bounceOff(lab_stairs_bw);
-        p1.bounceOff(lab_stairs_d);
+        // p1.bounceOff(lab_stairs_d);
         p1.bounceOff(lab_stairs_lw);
         p1.bounceOff(lab_stairs_rw1);
         p1.bounceOff(lab_stairs_rw2);
@@ -3929,37 +5005,37 @@ class Game {
         p2.bounceOff(r1_rw);
         p2.bounceOff(r1_bw);
         p2.bounceOff(r1_bw2);
-        p2.bounceOff(r1_d);
+        // p2.bounceOff(r1_d);
         p2.bounceOff(r2_bw);
         p2.bounceOff(r2_bw2);
-        p2.bounceOff(r2_d);
+        // p2.bounceOff(r2_d);
         p2.bounceOff(r2_rw);
-        p2.bounceOff(r3_d);
+        // p2.bounceOff(r3_d);
         p2.bounceOff(r3_rw);
         p2.bounceOff(r3_uw);
         p2.bounceOff(r4_bw);
         p2.bounceOff(r4_bw2);
         p2.bounceOff(r4_bw3);
         p2.bounceOff(r4_bw4);
-        p2.bounceOff(r4_d);
+        // p2.bounceOff(r4_d);
         p2.bounceOff(r4_lw);
-        p2.bounceOff(r5_d);
+        // p2.bounceOff(r5_d);
         p2.bounceOff(r5_lw);
         p2.bounceOff(r5_uw1);
         p2.bounceOff(r5_uw2);
-        p2.bounceOff(r6_ld);
+        // p2.bounceOff(r6_ld);
         p2.bounceOff(r6_lw);
-        p2.bounceOff(r6_rd);
+        // p2.bounceOff(r6_rd);
         p2.bounceOff(r6_rw);
         p2.bounceOff(r6_uw);
         p2.bounceOff(stairs_bw);
-        p2.bounceOff(stairs_d);
+        // p2.bounceOff(stairs_d);
         p2.bounceOff(stairs_lw);
         p2.bounceOff(stairs_rw1);
         p2.bounceOff(stairs_rw2);
         p2.bounceOff(stairs_uw);
         p2.bounceOff(lab_stairs_bw);
-        p2.bounceOff(lab_stairs_d);
+        // p2.bounceOff(lab_stairs_d);
         p2.bounceOff(lab_stairs_lw);
         p2.bounceOff(lab_stairs_rw1);
         p2.bounceOff(lab_stairs_rw2);
@@ -3980,37 +5056,37 @@ class Game {
         p3.bounceOff(r1_rw);
         p3.bounceOff(r1_bw);
         p3.bounceOff(r1_bw2);
-        p3.bounceOff(r1_d);
+        // p3.bounceOff(r1_d);
         p3.bounceOff(r2_bw);
         p3.bounceOff(r2_bw2);
-        p3.bounceOff(r2_d);
+        // p3.bounceOff(r2_d);
         p3.bounceOff(r2_rw);
-        p3.bounceOff(r3_d);
+        // p3.bounceOff(r3_d);
         p3.bounceOff(r3_rw);
         p3.bounceOff(r3_uw);
         p3.bounceOff(r4_bw);
         p3.bounceOff(r4_bw2);
         p3.bounceOff(r4_bw3);
         p3.bounceOff(r4_bw4);
-        p3.bounceOff(r4_d);
+        // p3.bounceOff(r4_d);
         p3.bounceOff(r4_lw);
-        p3.bounceOff(r5_d);
+        // p3.bounceOff(r5_d);
         p3.bounceOff(r5_lw);
         p3.bounceOff(r5_uw1);
         p3.bounceOff(r5_uw2);
-        p3.bounceOff(r6_ld);
+        // p3.bounceOff(r6_ld);
         p3.bounceOff(r6_lw);
-        p3.bounceOff(r6_rd);
+        // p3.bounceOff(r6_rd);
         p3.bounceOff(r6_rw);
         p3.bounceOff(r6_uw);
         p3.bounceOff(stairs_bw);
-        p3.bounceOff(stairs_d);
+        // p3.bounceOff(stairs_d);
         p3.bounceOff(stairs_lw);
         p3.bounceOff(stairs_rw1);
         p3.bounceOff(stairs_rw2);
         p3.bounceOff(stairs_uw);
         p3.bounceOff(lab_stairs_bw);
-        p3.bounceOff(lab_stairs_d);
+        // p3.bounceOff(lab_stairs_d);
         p3.bounceOff(lab_stairs_lw);
         p3.bounceOff(lab_stairs_rw1);
         p3.bounceOff(lab_stairs_rw2);
@@ -4031,37 +5107,37 @@ class Game {
         p4.bounceOff(r1_rw);
         p4.bounceOff(r1_bw);
         p4.bounceOff(r1_bw2);
-        p4.bounceOff(r1_d);
+        // p4.bounceOff(r1_d);
         p4.bounceOff(r2_bw);
         p4.bounceOff(r2_bw2);
-        p4.bounceOff(r2_d);
+        // p4.bounceOff(r2_d);
         p4.bounceOff(r2_rw);
-        p4.bounceOff(r3_d);
+        // p4.bounceOff(r3_d);
         p4.bounceOff(r3_rw);
         p4.bounceOff(r3_uw);
         p4.bounceOff(r4_bw);
         p4.bounceOff(r4_bw2);
         p4.bounceOff(r4_bw3);
         p4.bounceOff(r4_bw4);
-        p4.bounceOff(r4_d);
+        // p4.bounceOff(r4_d);
         p4.bounceOff(r4_lw);
-        p4.bounceOff(r5_d);
+        // p4.bounceOff(r5_d);
         p4.bounceOff(r5_lw);
         p4.bounceOff(r5_uw1);
         p4.bounceOff(r5_uw2);
-        p4.bounceOff(r6_ld);
+        // p4.bounceOff(r6_ld);
         p4.bounceOff(r6_lw);
-        p4.bounceOff(r6_rd);
+        // p4.bounceOff(r6_rd);
         p4.bounceOff(r6_rw);
         p4.bounceOff(r6_uw);
         p4.bounceOff(stairs_bw);
-        p4.bounceOff(stairs_d);
+        // p4.bounceOff(stairs_d);
         p4.bounceOff(stairs_lw);
         p4.bounceOff(stairs_rw1);
         p4.bounceOff(stairs_rw2);
         p4.bounceOff(stairs_uw);
         p4.bounceOff(lab_stairs_bw);
-        p4.bounceOff(lab_stairs_d);
+        // p4.bounceOff(lab_stairs_d);
         p4.bounceOff(lab_stairs_lw);
         p4.bounceOff(lab_stairs_rw1);
         p4.bounceOff(lab_stairs_rw2);
@@ -4079,7 +5155,26 @@ class Game {
         p4.bounceOff(lab_rw);
         p4.bounceOff(lab_lw);
 
-
         drawSprites();
+
+        if (p2_sr.isTouching(r1_d) || p2_sr.isTouching(r2_d) || p2_sr.isTouching(r3_d) || p2_sr.isTouching(r4_d) || p2_sr.isTouching(r5_d) || p2_sr.isTouching(r6_ld) || p2_sr.isTouching(r6_rd) || p2_sr.isTouching(stairs_d) || p2_sr.isTouching(lab_stairs_d) || p2_sr.isTouching(house_md)) {
+            text("Press 'Space' to open the door", displayWidth / 2, displayHeight / 2);
+            if (p2_sr.isTouching(r1_d) && keyCode === 32 && r1_d_open === false) {
+                r1_d.x += 45;
+                r1_d.y -= 50;
+                r1_d.width = 10;
+                r1_d.height = 100;
+                r1_d_open = true;
+            }
+            else if (p2_sr.isTouching(r1_d) && keyCode === 32 && r1_d_open === true) {
+                r1_d.x -= 45;
+                r1_d.y += 50;
+                r1_d.width = 100;
+                r1_d.height = 10;
+                r1_d_open = false;
+            }
+            
+        }
+
     }
 }
