@@ -19,8 +19,7 @@ var r6f; //, r6f2, r6f3, r6f4, r6f5, r6f6, r6f7, r6f8, r6f9, r6f10, r6f11, r6f12
 // var hfx2, hfy2, hf251, hf252, hf253, hf254, hf255, hf256, hf257, hf258, hf259, hf260, hf261, hf262, hf263, hf264, hf265, hf266, hf267, hf268, hf269, hf270, hf271, hf272, hf273, hf274, hf275, hf276, hf277, hf278, hf279, hf280, hf281, hf282, hf283, hf284, hf285, hf286, hf287, hf288, hf289, hf290, hf291, hf292, hf293, hf294, hf295, hf296, hf297, hf298, hf299, hf300, hf301, hf302, hf303, hf304, hf305, hf306, hf307, hf308, hf309, hf310, hf311, hf312, hf313, hf314, hf315, hf316, hf317, hf318, hf319, hf320, hf321, hf322, hf323, hf324, hf325, hf326, hf327, hf328, hf329, hf330, hf331, hf332, hf333, hf334, hf335, hf336, hf337, hf338, hf339, hf340, hf341, hf342, hf343, hf344, hf345, hf346, hf347, hf348, hf349, hf350, hf351, hf352, hf353, hf354, hf355, hf356, hf357, hf358, hf359, hf360, hf361, hf362, hf363, hf364, hf365, hf366, hf367, hf368, hf369, hf370, hf371, hf372, hf373, hf374, hf375, hf376, hf377, hf378, hf379, hf380, hf381, hf382, hf383, hf384, hf385, hf386, hf387, hf388, hf389, hf390, hf391, hf392, hf393, hf394, hf395, hf396, hf397, hf398, hf399, hf400, hf401, hf402, hf403, hf404, hf405, hf406, hf407, hf408, hf409, hf410, hf411, hf412, hf413, hf414, hf415, hf416, hf417, hf418, hf419, hf420, hf421, hf422, hf423, hf424, hf425, hf426, hf427, hf428, hf429, hf430, hf431, hf432, hf433, hf434, hf435, hf436, hf437, hf438, hf439, hf440, hf441, hf442, hf443, hf444, hf445, hf446, hf447, hf448, hf449, hf450, hf451, hf452, hf453, hf454, hf455, hf456, hf457, hf458, hf459, hf460, hf461, hf462, hf463, hf464, hf465, hf466, hf467, hf468, hf469, hf470, hf471, hf472, hf473, hf474, hf475, hf476, hf477, hf478, hf479, hf480, hf481, hf482, hf483, hf484, hf485, hf486, hf487, hf488, hf489, hf490, hf491, hf492, hf493, hf494, hf495, hf496, hf497, hf498, hf499, hf500, hf501, hf502, hf503, hf504, hf505, hf506, hf507, hf508, hf509, hf510, hf511, hf512, hf513, hf514, hf515, hf516, hf517, hf518, hf519, hf520, hf521, hf522, hf523, hf524, hf525, hf526, hf527, hf528, hf529, hf530, hf531, hf532, hf533, hf534, hf535, hf536, hf537, hf538, hf539, hf540;
 // var hfx3, hfy3, hf541, hf542, hf543, hf544, hf545, hf546, hf547, hf548, hf549, hf550, hf551, hf552, hf553, hf554, hf555, hf556, hf557, hf558, hf559, hf560, hf561, hf562, hf563, hf564, hf565, hf566, hf567, hf568, hf569, hf570, hf571, hf572, hf573, hf574, hf575, hf576, hf577, hf578, hf579, hf580, hf581, hf581, hf582, hf583, hf584, hf585, hf586, hf587, hf588, hf589, hf590, hf591, hf592, hf593, hf594, hf595, hf596, hf597, hf598, hf599, hf600, hf601, hf602, hf603, hf604, hf605, hf606, hf607, hf608, hf609, hf610, hf611, hf612, hf613, hf614, hf615, hf616, hf617, hf618, hf619, hf620, hf621, hf622, hf623, hf624, hf625, hf626, hf627, hf628, hf629, hf630, hf631, hf632, hf633, hf634, hf635, hf636, hf637, hf638, hf639, hf640, hf641, hf642, hf643, hf644, hf645, hf646, hf647, hf648, hf649, hf650, hf651, hf652, hf653, hf654, hf655, hf656, hf657, hf658, hf659, hf660, hf661, hf662, hf663, hf664, hf665, hf666, hf667, hf668, hf669, hf670, hf671, hf672, hf673, hf674, hf675, hf676, hf677, hf678, hf679, hf680, hf681, hf682, hf683, hf684, hf685, hf686, hf687, hf688, hf689, hf690, hf691, hf692, hf693, hf694, hf695, hf696, hf697, hf698, hf699, hf700, hf701, hf702, hf703, hf704, hf705, hf706, hf707, hf708, hf709, hf710, hf711, hf712, hf713, hf714, hf715, hf716, hf717, hf718;
 var p1_sr, p2_sr, p3_sr, p4_sr;
-var r1_d_open = false;
-var r2_d_open = false;
+var r1_d_open, r1_d2_open, r2_d_open, r3_d_open, r4_d_open, r5_d_open, r6_ld_open, r6_rd_open, md_open;
 var bed, bedImg, sidetable1, sidetable1Img, sidetable2, sidetable2Img, r1cupboard1, r1cupboard1Img, r1cupboard2, r1cupboard2Img, box1, boxImg;
 // var randNum = Math.round(random(1, 4));
 var bathtub, bathtubImg, sink, sinkImg, toilet, toiletImg;
@@ -132,7 +131,6 @@ function draw() {
     vid.stop();
     vid.hide();
     game.play();
-
   }
 
   // game.hideFormAfterGS0();
@@ -142,27 +140,377 @@ function draw() {
   drawSprites();
 
   if (gameState === 2) {
-    Player.getPlayerInfo();
+    // Player.getPlayerInfo();
+    game.getDoorStatus();
     var index = 0;
     for (var plr in allPlayers) {
       index += 1;
       if (index === player.index) {
-        if (player.index === 2) {
-          if (p2_sr.isTouching(r1_d) || p2_sr.isTouching(r2_d) || p2_sr.isTouching(r3_d) || p2_sr.isTouching(r4_d) || p2_sr.isTouching(r5_d) || p2_sr.isTouching(r6_ld) || p2_sr.isTouching(r6_rd) || p2_sr.isTouching(stairs_d) || p2_sr.isTouching(lab_stairs_d) || p2_sr.isTouching(house_md)) {
-            text("Press 'Space' to open the door", players[index - 1].x - 40, players[index - 1].y + 50);
-            if (p2_sr.isTouching(r1_d) && keyCode === 32 && r1_d_open === false) {
-              r1_d.x += 45;
-              r1_d.y -= 50;
-              r1_d.width = 10;
-              r1_d.height = 100;
-              r1_d_open = true;
+        if (player.index === 1) {
+          if (p1_sr.isTouching(r1_d) || p1_sr.isTouching(r1_d2) || p1_sr.isTouching(r2_d) || p1_sr.isTouching(r3_d) || p1_sr.isTouching(r4_d) || p1_sr.isTouching(r5_d) || p1_sr.isTouching(r6_ld) || p1_sr.isTouching(r6_rd) || p1_sr.isTouching(stairs_d) || p1_sr.isTouching(lab_stairs_d) || p1_sr.isTouching(house_md)) {
+            if (p1_sr.isTouching(r1_d)) {
+              if (r1_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r1_d_open === false)
+                game.updateR1d1Status(true, 100, 195, 10, 100);
+              else if (keyCode === 32 && r1_d_open === true)
+                game.updateR1d1Status(false, 55, 245, 100, 10);
             }
-            else if (p2_sr.isTouching(r1_d) && keyCode === 32 && r1_d_open === true) {
-              r1_d.x -= 45;
-              r1_d.y += 50;
-              r1_d.width = 100;
-              r1_d.height = 10;
-              r1_d_open = false;
+            if (p1_sr.isTouching(r1_d2)) {
+              if (r1_d2_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r1_d2_open === false)
+                game.updateR1d2Status(true, 250, -354, 100, 10);
+              else if (keyCode === 32 && r1_d2_open === true)
+                game.updateR1d2Status(false, 200, -313, 10, 100);
+            }
+            if (p1_sr.isTouching(r2_d)) {
+              if (r2_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r2_d_open === false)
+                game.updateR2dStatus(true, 325, -110, 10, 100);
+              else if (keyCode === 32 && r2_d_open === true)
+                game.updateR2dStatus(false, 280, -160, 100, 10);
+            }
+            if (p1_sr.isTouching(r3_d)) {
+              if (r3_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r3_d_open === false)
+                game.updateR3dStatus(true, 330, 1040, 100, 10);
+              else if (keyCode === 32 && r3_d_open === true)
+                game.updateR3dStatus(false, 380, 995, 10, 100);
+            }
+            if (p1_sr.isTouching(r4_d)) {
+              if (r4_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r4_d_open === false)
+                game.updateR4dStatus(true, 2250, -30, 10, 100);
+              else if (keyCode === 32 && r4_d_open === true)
+                game.updateR4dStatus(false, 2205, -80, 100, 10);
+            }
+            if (p1_sr.isTouching(r5_d)) {
+              if (r5_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r5_d_open === false)
+                game.updateR5dStatus(true, 1460, 765, 10, 100);
+              else if (keyCode === 32 && r5_d_open === true)
+                game.updateR5dStatus(false, 1505, 715, 100, 10);
+            }
+            if (p1_sr.isTouching(r6_ld)) {
+              if (r6_ld_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r6_ld_open === false)
+                game.updateR6ldStatus(true, 650, 1040, 100, 10);
+              else if (keyCode === 32 && r6_ld_open === true)
+                game.updateR6ldStatus(false, 600, 995, 10, 100);
+            }
+            if (p1_sr.isTouching(r6_rd)) {
+              if (r6_rd_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r6_rd_open === false)
+                game.updateR6rdStatus(true, 1050, 1040, 100, 10);
+              else if (keyCode === 32 && r6_rd_open === true)
+                game.updateR6rdStatus(false, 1100, 995, 10, 100);
+            }
+          }
+        }
+        else if (player.index === 2) {
+          if (p2_sr.isTouching(r1_d) || p2_sr.isTouching(r1_d2) || p2_sr.isTouching(r2_d) || p2_sr.isTouching(r3_d) || p2_sr.isTouching(r4_d) || p2_sr.isTouching(r5_d) || p2_sr.isTouching(r6_ld) || p2_sr.isTouching(r6_rd) || p2_sr.isTouching(stairs_d) || p2_sr.isTouching(lab_stairs_d) || p2_sr.isTouching(house_md)) {
+            if (p2_sr.isTouching(r1_d)) {
+              if (r1_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r1_d_open === false)
+                game.updateR1d1Status(true, 100, 195, 10, 100);
+              else if (keyCode === 32 && r1_d_open === true)
+                game.updateR1d1Status(false, 55, 245, 100, 10);
+            }
+            if (p2_sr.isTouching(r1_d2)) {
+              if (r1_d2_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r1_d2_open === false)
+                game.updateR1d2Status(true, 250, -354, 100, 10);
+              else if (keyCode === 32 && r1_d2_open === true)
+                game.updateR1d2Status(false, 200, -313, 10, 100);
+            }
+            if (p2_sr.isTouching(r2_d)) {
+              if (r2_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r2_d_open === false)
+                game.updateR2dStatus(true, 325, -110, 10, 100);
+              else if (keyCode === 32 && r2_d_open === true)
+                game.updateR2dStatus(false, 280, -160, 100, 10);
+            }
+            if (p2_sr.isTouching(r3_d)) {
+              if (r3_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r3_d_open === false)
+                game.updateR3dStatus(true, 330, 1040, 100, 10);
+              else if (keyCode === 32 && r3_d_open === true)
+                game.updateR3dStatus(false, 380, 995, 10, 100);
+            }
+            if (p2_sr.isTouching(r4_d)) {
+              if (r4_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r4_d_open === false)
+                game.updateR4dStatus(true, 2250, -30, 10, 100);
+              else if (keyCode === 32 && r4_d_open === true)
+                game.updateR4dStatus(false, 2205, -80, 100, 10);
+            }
+            if (p2_sr.isTouching(r5_d)) {
+              if (r5_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r5_d_open === false)
+                game.updateR5dStatus(true, 1460, 765, 10, 100);
+              else if (keyCode === 32 && r5_d_open === true)
+                game.updateR5dStatus(false, 1505, 715, 100, 10);
+            }
+            if (p2_sr.isTouching(r6_ld)) {
+              if (r6_ld_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r6_ld_open === false)
+                game.updateR6ldStatus(true, 650, 1040, 100, 10);
+              else if (keyCode === 32 && r6_ld_open === true)
+                game.updateR6ldStatus(false, 600, 995, 10, 100);
+            }
+            if (p2_sr.isTouching(r6_rd)) {
+              if (r6_rd_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r6_rd_open === false)
+                game.updateR6rdStatus(true, 1050, 1040, 100, 10);
+              else if (keyCode === 32 && r6_rd_open === true)
+                game.updateR6rdStatus(false, 1100, 995, 10, 100);
+            }
+          }
+        }
+        else if (player.index === 3) {
+          if (p3_sr.isTouching(r1_d) || p3_sr.isTouching(r1_d2) || p3_sr.isTouching(r2_d) || p3_sr.isTouching(r3_d) || p3_sr.isTouching(r4_d) || p3_sr.isTouching(r5_d) || p3_sr.isTouching(r6_ld) || p3_sr.isTouching(r6_rd) || p3_sr.isTouching(stairs_d) || p3_sr.isTouching(lab_stairs_d) || p3_sr.isTouching(house_md)) {
+            if (p3_sr.isTouching(r1_d)) {
+              if (r1_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r1_d_open === false)
+                game.updateR1d1Status(true, 100, 195, 10, 100);
+              else if (keyCode === 32 && r1_d_open === true)
+                game.updateR1d1Status(false, 55, 245, 100, 10);
+            }
+            if (p3_sr.isTouching(r1_d2)) {
+              if (r1_d2_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r1_d2_open === false)
+                game.updateR1d2Status(true, 250, -354, 100, 10);
+              else if (keyCode === 32 && r1_d2_open === true)
+                game.updateR1d2Status(false, 200, -313, 10, 100);
+            }
+            if (p3_sr.isTouching(r2_d)) {
+              if (r2_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r2_d_open === false)
+                game.updateR2dStatus(true, 325, -110, 10, 100);
+              else if (keyCode === 32 && r2_d_open === true)
+                game.updateR2dStatus(false, 280, -160, 100, 10);
+            }
+            if (p3_sr.isTouching(r3_d)) {
+              if (r3_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r3_d_open === false)
+                game.updateR3dStatus(true, 330, 1040, 100, 10);
+              else if (keyCode === 32 && r3_d_open === true)
+                game.updateR3dStatus(false, 380, 995, 10, 100);
+            }
+            if (p3_sr.isTouching(r4_d)) {
+              if (r4_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r4_d_open === false)
+                game.updateR4dStatus(true, 2250, -30, 10, 100);
+              else if (keyCode === 32 && r4_d_open === true)
+                game.updateR4dStatus(false, 2205, -80, 100, 10);
+            }
+            if (p3_sr.isTouching(r5_d)) {
+              if (r5_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r5_d_open === false)
+                game.updateR5dStatus(true, 1460, 765, 10, 100);
+              else if (keyCode === 32 && r5_d_open === true)
+                game.updateR5dStatus(false, 1505, 715, 100, 10);
+            }
+            if (p3_sr.isTouching(r6_ld)) {
+              if (r6_ld_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r6_ld_open === false)
+                game.updateR6ldStatus(true, 650, 1040, 100, 10);
+              else if (keyCode === 32 && r6_ld_open === true)
+                game.updateR6ldStatus(false, 600, 995, 10, 100);
+            }
+            if (p3_sr.isTouching(r6_rd)) {
+              if (r6_rd_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r6_rd_open === false)
+                game.updateR6rdStatus(true, 1050, 1040, 100, 10);
+              else if (keyCode === 32 && r6_rd_open === true)
+                game.updateR6rdStatus(false, 1100, 995, 10, 100);
+            }
+          }
+        }
+        else if (player.index === 4) {
+          if (p4_sr.isTouching(r1_d) || p4_sr.isTouching(r1_d2) || p4_sr.isTouching(r2_d) || p4_sr.isTouching(r3_d) || p4_sr.isTouching(r4_d) || p4_sr.isTouching(r5_d) || p4_sr.isTouching(r6_ld) || p4_sr.isTouching(r6_rd) || p4_sr.isTouching(stairs_d) || p4_sr.isTouching(lab_stairs_d) || p4_sr.isTouching(house_md)) {
+            if (p4_sr.isTouching(r1_d)) {
+              if (r1_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r1_d_open === false)
+                game.updateR1d1Status(true, 100, 195, 10, 100);
+              else if (keyCode === 32 && r1_d_open === true)
+                game.updateR1d1Status(false, 55, 245, 100, 10);
+            }
+            if (p4_sr.isTouching(r1_d2)) {
+              if (r1_d2_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r1_d2_open === false)
+                game.updateR1d2Status(true, 250, -354, 100, 10);
+              else if (keyCode === 32 && r1_d2_open === true)
+                game.updateR1d2Status(false, 200, -313, 10, 100);
+            }
+            if (p4_sr.isTouching(r2_d)) {
+              if (r2_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r2_d_open === false)
+                game.updateR2dStatus(true, 325, -110, 10, 100);
+              else if (keyCode === 32 && r2_d_open === true)
+                game.updateR2dStatus(false, 280, -160, 100, 10);
+            }
+            if (p4_sr.isTouching(r3_d)) {
+              if (r3_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r3_d_open === false)
+                game.updateR3dStatus(true, 330, 1040, 100, 10);
+              else if (keyCode === 32 && r3_d_open === true)
+                game.updateR3dStatus(false, 380, 995, 10, 100);
+            }
+            if (p4_sr.isTouching(r4_d)) {
+              if (r4_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r4_d_open === false)
+                game.updateR4dStatus(true, 2250, -30, 10, 100);
+              else if (keyCode === 32 && r4_d_open === true)
+                game.updateR4dStatus(false, 2205, -80, 100, 10);
+            }
+            if (p4_sr.isTouching(r5_d)) {
+              if (r5_d_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r5_d_open === false)
+                game.updateR5dStatus(true, 1460, 765, 10, 100);
+              else if (keyCode === 32 && r5_d_open === true)
+                game.updateR5dStatus(false, 1505, 715, 100, 10);
+            }
+            if (p4_sr.isTouching(r6_ld)) {
+              if (r6_ld_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r6_ld_open === false)
+                game.updateR6ldStatus(true, 650, 1040, 100, 10);
+              else if (keyCode === 32 && r6_ld_open === true)
+                game.updateR6ldStatus(false, 600, 995, 10, 100);
+            }
+            if (p4_sr.isTouching(r6_rd)) {
+              if (r6_rd_open === false)
+                text("Press 'Space' to open the door", players[index - 1].x - 70, players[index - 1].y + 50);
+              else
+                text("Press 'Space' to close the door", players[index - 1].x - 70, players[index - 1].y + 50);
+
+              if (keyCode === 32 && r6_rd_open === false)
+                game.updateR6rdStatus(true, 1050, 1040, 100, 10);
+              else if (keyCode === 32 && r6_rd_open === true)
+                game.updateR6rdStatus(false, 1100, 995, 10, 100);
             }
           }
         }
