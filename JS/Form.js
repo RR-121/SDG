@@ -32,6 +32,8 @@ class Form {
             player.name = this.input.value();
             player.update();
 
+            game.getDoorStatus();
+
             this.greeting.html("Welcome " + player.name + "!");
             this.greeting.position(displayWidth / 2 - 60, displayHeight / 2 - 130);
         })
@@ -42,6 +44,7 @@ class Form {
             gameState = 0;
             game.updateS(gameState);
             database.ref('players').remove();
+            Game.resetDoorStatus();
         })
     }
 }
