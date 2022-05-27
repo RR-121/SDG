@@ -355,7 +355,6 @@ class Game {
         toilet = createSprite(373, -240);
         toilet.addImage(toiletImg);
         toilet.scale = 0.4;
-        toilet.debug = true;
         toilet.setCollider("rectangle", 5, -3, 215, 125);
 
         kitchenup = createSprite(-87, 855);
@@ -704,10 +703,12 @@ class Game {
             if (player.index === 1) {
                 // vr.x = p1.x;
                 // vr.y = p1.y;
+                // console.log("Initial position of P1: " + p1.y)
                 if (keyIsDown(UP_ARROW)) {
-                    p1.velocityY = -5;
+                    p1.velocityY = 5;
                     player.posY = p1.y;
                     // vr.y = player.posY;
+                    // console.log("P1's velocity Y: " + p1.velocityY);
                 }
                 if (keyIsDown(DOWN_ARROW)) {
                     p1.velocityY = 5;
@@ -739,10 +740,12 @@ class Game {
             else if (player.index === 2) {
                 // vr.x = p2.x;
                 // vr.y = p2.y
+                // console.log("Initial position of P2: " + p2.y)
                 if (keyIsDown(UP_ARROW)) {
                     p2.velocityY = -5;
                     player.posY = p2.y;
                     // vr.y = player.posY;
+                    // console.log("Up arrow is pressed for P2 at y: " + p2.y);
                 }
                 if (keyIsDown(DOWN_ARROW)) {
                     p2.velocityY = 5;
@@ -854,29 +857,29 @@ class Game {
         p1.bounceOff(r1_rw);
         p1.bounceOff(r1_bw);
         p1.bounceOff(r1_bw2);
-        // p1.bounceOff(r1_d);
-        // p1.bounceOff(r1_d2);
+        p1.bounceOff(r1_d);
+        p1.bounceOff(r1_d2);
         p1.bounceOff(r1_rw2);
         p1.bounceOff(r2_bw);
         p1.bounceOff(r2_bw2);
-        // p1.bounceOff(r2_d);
+        p1.bounceOff(r2_d);
         p1.bounceOff(r2_rw);
-        // p1.bounceOff(r3_d);
+        p1.bounceOff(r3_d);
         p1.bounceOff(r3_rw);
         p1.bounceOff(r3_uw);
         p1.bounceOff(r4_bw);
         p1.bounceOff(r4_bw2);
         p1.bounceOff(r4_bw3);
         p1.bounceOff(r4_bw4);
-        // p1.bounceOff(r4_d);
+        p1.bounceOff(r4_d);
         p1.bounceOff(r4_lw);
-        // p1.bounceOff(r5_d);
+        p1.bounceOff(r5_d);
         p1.bounceOff(r5_lw);
         p1.bounceOff(r5_uw1);
         p1.bounceOff(r5_uw2);
-        // p1.bounceOff(r6_ld);
+        p1.bounceOff(r6_ld);
         p1.bounceOff(r6_lw);
-        // p1.bounceOff(r6_rd);
+        p1.bounceOff(r6_rd);
         p1.bounceOff(r6_rw);
         p1.bounceOff(r6_uw);
         p1.bounceOff(stairs_bw);
@@ -943,29 +946,29 @@ class Game {
         p2.bounceOff(r1_rw);
         p2.bounceOff(r1_bw);
         p2.bounceOff(r1_bw2);
-        // p2.bounceOff(r1_d);
-        // p2.bounceOff(r1_d2);
+        p2.bounceOff(r1_d);
+        p2.bounceOff(r1_d2);
         p2.bounceOff(r1_rw2);
         p2.bounceOff(r2_bw);
         p2.bounceOff(r2_bw2);
-        // p2.bounceOff(r2_d);
+        p2.bounceOff(r2_d);
         p2.bounceOff(r2_rw);
-        // p2.bounceOff(r3_d);
+        p2.bounceOff(r3_d);
         p2.bounceOff(r3_rw);
         p2.bounceOff(r3_uw);
         p2.bounceOff(r4_bw);
         p2.bounceOff(r4_bw2);
         p2.bounceOff(r4_bw3);
         p2.bounceOff(r4_bw4);
-        // p2.bounceOff(r4_d);
+        p2.bounceOff(r4_d);
         p2.bounceOff(r4_lw);
-        // p2.bounceOff(r5_d);
+        p2.bounceOff(r5_d);
         p2.bounceOff(r5_lw);
         p2.bounceOff(r5_uw1);
         p2.bounceOff(r5_uw2);
-        // p2.bounceOff(r6_ld);
+        p2.bounceOff(r6_ld);
         p2.bounceOff(r6_lw);
-        // p2.bounceOff(r6_rd);
+        p2.bounceOff(r6_rd);
         p2.bounceOff(r6_rw);
         p2.bounceOff(r6_uw);
         p2.bounceOff(stairs_bw);
@@ -1032,29 +1035,29 @@ class Game {
         p3.bounceOff(r1_rw);
         p3.bounceOff(r1_bw);
         p3.bounceOff(r1_bw2);
-        // p3.bounceOff(r1_d);
-        // p3.bounceOff(r1_d2);
+        p3.bounceOff(r1_d);
+        p3.bounceOff(r1_d2);
         p3.bounceOff(r1_rw2);
         p3.bounceOff(r2_bw);
         p3.bounceOff(r2_bw2);
-        // p3.bounceOff(r2_d);
+        p3.bounceOff(r2_d);
         p3.bounceOff(r2_rw);
-        // p3.bounceOff(r3_d);
+        p3.bounceOff(r3_d);
         p3.bounceOff(r3_rw);
         p3.bounceOff(r3_uw);
         p3.bounceOff(r4_bw);
         p3.bounceOff(r4_bw2);
         p3.bounceOff(r4_bw3);
         p3.bounceOff(r4_bw4);
-        // p3.bounceOff(r4_d);
+        p3.bounceOff(r4_d);
         p3.bounceOff(r4_lw);
-        // p3.bounceOff(r5_d);
+        p3.bounceOff(r5_d);
         p3.bounceOff(r5_lw);
         p3.bounceOff(r5_uw1);
         p3.bounceOff(r5_uw2);
-        // p3.bounceOff(r6_ld);
+        p3.bounceOff(r6_ld);
         p3.bounceOff(r6_lw);
-        // p3.bounceOff(r6_rd);
+        p3.bounceOff(r6_rd);
         p3.bounceOff(r6_rw);
         p3.bounceOff(r6_uw);
         p3.bounceOff(stairs_bw);
@@ -1121,29 +1124,29 @@ class Game {
         p4.bounceOff(r1_rw);
         p4.bounceOff(r1_bw);
         p4.bounceOff(r1_bw2);
-        // p4.bounceOff(r1_d);
-        // p4.bounceOff(r1_d2);
+        p4.bounceOff(r1_d);
+        p4.bounceOff(r1_d2);
         p4.bounceOff(r1_rw2);
         p4.bounceOff(r2_bw);
         p4.bounceOff(r2_bw2);
-        // p4.bounceOff(r2_d);
+        p4.bounceOff(r2_d);
         p4.bounceOff(r2_rw);
-        // p4.bounceOff(r3_d);
+        p4.bounceOff(r3_d);
         p4.bounceOff(r3_rw);
         p4.bounceOff(r3_uw);
         p4.bounceOff(r4_bw);
         p4.bounceOff(r4_bw2);
         p4.bounceOff(r4_bw3);
         p4.bounceOff(r4_bw4);
-        // p4.bounceOff(r4_d);
+        p4.bounceOff(r4_d);
         p4.bounceOff(r4_lw);
-        // p4.bounceOff(r5_d);
+        p4.bounceOff(r5_d);
         p4.bounceOff(r5_lw);
         p4.bounceOff(r5_uw1);
         p4.bounceOff(r5_uw2);
-        // p4.bounceOff(r6_ld);
+        p4.bounceOff(r6_ld);
         p4.bounceOff(r6_lw);
-        // p4.bounceOff(r6_rd);
+        p4.bounceOff(r6_rd);
         p4.bounceOff(r6_rw);
         p4.bounceOff(r6_uw);
         p4.bounceOff(stairs_bw);
@@ -1209,5 +1212,291 @@ class Game {
 
         drawSprites();
 
+    }
+
+    getDoorStatus() {
+        database.ref('AllDoors/R1d1/Open').on("value", (data) => {
+            r1_d_open = data.val();
+        })
+        database.ref('AllDoors/R1d1/X').on("value", (data) => {
+            r1_d.x = data.val();
+        })
+        database.ref('AllDoors/R1d1/Y').on("value", (data) => {
+            r1_d.y = data.val();
+        })
+        database.ref('AllDoors/R1d1/W').on("value", (data) => {
+            r1_d.width = data.val();
+        })
+        database.ref('AllDoors/R1d1/H').on("value", (data) => {
+            r1_d.height = data.val();
+        })
+        database.ref('AllDoors/R1d2/Open').on("value", (data) => {
+            r1_d2_open = data.val();
+        })
+        database.ref('AllDoors/R1d2/X').on("value", (data) => {
+            r1_d2.x = data.val();
+        })
+        database.ref('AllDoors/R1d2/Y').on("value", (data) => {
+            r1_d2.y = data.val();
+        })
+        database.ref('AllDoors/R1d2/W').on("value", (data) => {
+            r1_d2.width = data.val();
+        })
+        database.ref('AllDoors/R1d2/H').on("value", (data) => {
+            r1_d2.height = data.val();
+        })
+        database.ref('AllDoors/R2d/Open').on("value", (data) => {
+            r2_d_open = data.val();
+        })
+        database.ref('AllDoors/R2d/X').on("value", (data) => {
+            r2_d.x = data.val();
+        })
+        database.ref('AllDoors/R2d/Y').on("value", (data) => {
+            r2_d.y = data.val();
+        })
+        database.ref('AllDoors/R2d/W').on("value", (data) => {
+            r2_d.width = data.val();
+        })
+        database.ref('AllDoors/R2d/H').on("value", (data) => {
+            r2_d.height = data.val();
+        })
+        database.ref('AllDoors/R3d/Open').on("value", (data) => {
+            r3_d_open = data.val();
+        })
+        database.ref('AllDoors/R3d/X').on("value", (data) => {
+            r3_d.x = data.val();
+        })
+        database.ref('AllDoors/R3d/Y').on("value", (data) => {
+            r3_d.y = data.val();
+        })
+        database.ref('AllDoors/R3d/W').on("value", (data) => {
+            r3_d.width = data.val();
+        })
+        database.ref('AllDoors/R3d/H').on("value", (data) => {
+            r3_d.height = data.val();
+        })
+        database.ref('AllDoors/R4d/Open').on("value", (data) => {
+            r4_d_open = data.val();
+        })
+        database.ref('AllDoors/R4d/X').on("value", (data) => {
+            r4_d.x = data.val();
+        })
+        database.ref('AllDoors/R4d/Y').on("value", (data) => {
+            r4_d.y = data.val();
+        })
+        database.ref('AllDoors/R4d/W').on("value", (data) => {
+            r4_d.width = data.val();
+        })
+        database.ref('AllDoors/R4d/H').on("value", (data) => {
+            r4_d.height = data.val();
+        })
+        database.ref('AllDoors/R5d/Open').on("value", (data) => {
+            r5_d_open = data.val();
+        })
+        database.ref('AllDoors/R5d/X').on("value", (data) => {
+            r5_d.x = data.val();
+        })
+        database.ref('AllDoors/R5d/Y').on("value", (data) => {
+            r5_d.y = data.val();
+        })
+        database.ref('AllDoors/R5d/W').on("value", (data) => {
+            r5_d.width = data.val();
+        })
+        database.ref('AllDoors/R5d/H').on("value", (data) => {
+            r5_d.height = data.val();
+        })
+        database.ref('AllDoors/R6ld/Open').on("value", (data) => {
+            r6_ld_open = data.val();
+        })
+        database.ref('AllDoors/R6ld/X').on("value", (data) => {
+            r6_ld.x = data.val();
+        })
+        database.ref('AllDoors/R6ld/Y').on("value", (data) => {
+            r6_ld.y = data.val();
+        })
+        database.ref('AllDoors/R6ld/W').on("value", (data) => {
+            r6_ld.width = data.val();
+        })
+        database.ref('AllDoors/R6ld/H').on("value", (data) => {
+            r6_ld.height = data.val();
+        })
+        database.ref('AllDoors/R6rd/Open').on("value", (data) => {
+            r6_rd_open = data.val();
+        })
+        database.ref('AllDoors/R6rd/X').on("value", (data) => {
+            r6_rd.x = data.val();
+        })
+        database.ref('AllDoors/R6rd/Y').on("value", (data) => {
+            r6_rd.y = data.val();
+        })
+        database.ref('AllDoors/R6rd/W').on("value", (data) => {
+            r6_rd.width = data.val();
+        })
+        database.ref('AllDoors/R6rd/H').on("value", (data) => {
+            r6_rd.height = data.val();
+        })
+        database.ref('AllDoors/MD/Open').on("value", (data) => {
+            md_open = data.val();
+        })
+        database.ref('AllDoors/MD/X').on("value", (data) => {
+            house_md.x = data.val();
+        })
+        database.ref('AllDoors/MD/Y').on("value", (data) => {
+            house_md.y = data.val();
+        })
+        database.ref('AllDoors/MD/W').on("value", (data) => {
+            house_md.width = data.val();
+        })
+        database.ref('AllDoors/MD/H').on("value", (data) => {
+            house_md.height = data.val();
+        })
+    }
+
+    updateR1d1Status(status, posX, posY, width, height) {
+        database.ref('AllDoors/R1d1').update({
+            Open: status,
+            X: posX,
+            Y: posY,
+            W: width,
+            H: height
+        });
+    }
+    updateR1d2Status(status, posX, posY, width, height) {
+        database.ref('AllDoors/R1d2').update({
+            Open: status,
+            X: posX,
+            Y: posY,
+            W: width,
+            H: height
+        });
+    }
+    updateR2dStatus(status, posX, posY, width, height) {
+        database.ref('AllDoors/R2d').update({
+            Open: status,
+            X: posX,
+            Y: posY,
+            W: width,
+            H: height
+        });
+    }
+    updateR3dStatus(status, posX, posY, width, height) {
+        database.ref('AllDoors/R3d').update({
+            Open: status,
+            X: posX,
+            Y: posY,
+            W: width,
+            H: height
+        });
+    }
+    updateR4dStatus(status, posX, posY, width, height) {
+        database.ref('AllDoors/R4d').update({
+            Open: status,
+            X: posX,
+            Y: posY,
+            W: width,
+            H: height
+        });
+    }
+    updateR5dStatus(status, posX, posY, width, height) {
+        database.ref('AllDoors/R5d').update({
+            Open: status,
+            X: posX,
+            Y: posY,
+            W: width,
+            H: height
+        });
+    }
+    updateR6ldStatus(status, posX, posY, width, height) {
+        database.ref('AllDoors/R6ld').update({
+            Open: status,
+            X: posX,
+            Y: posY,
+            W: width,
+            H: height
+        });
+    }
+    updateR6rdStatus(status, posX, posY, width, height) {
+        database.ref('AllDoors/R6rd').update({
+            Open: status,
+            X: posX,
+            Y: posY,
+            W: width,
+            H: height
+        });
+    }
+    updateMainDoorStatus(status, posX, posY, width, height) {
+        database.ref('AllDoors/MD').update({
+            MainDoorOpen: status,
+            X: posX,
+            Y: posY,
+            W: width,
+            H: height
+        });
+    }
+
+    static resetDoorStatus() {
+        database.ref('AllDoors/R1d1').update({
+            Open: false,
+            X: 55,
+            Y: 245,
+            W: 100,
+            H: 10
+        });
+        database.ref('AllDoors/R1d2').update({
+            Open: false,
+            X: 200,
+            Y: -313,
+            W: 10,
+            H: 100
+        });
+        database.ref('AllDoors/R2d').update({
+            Open: false,
+            X: 280,
+            Y: -160,
+            W: 100,
+            H: 10
+        });
+        database.ref('AllDoors/R3d').update({
+            Open: false,
+            X: 380,
+            Y: 995,
+            W: 10,
+            H: 100
+        });
+        database.ref('AllDoors/R4d').update({
+            Open: false,
+            X: 2205,
+            Y: -80,
+            W: 100,
+            H: 10
+        });
+        database.ref('AllDoors/R5d').update({
+            Open: false,
+            X: 1505,
+            Y: 715,
+            W: 100,
+            H: 10
+        });
+        database.ref('AllDoors/R6ld').update({
+            Open: false,
+            X: 600,
+            Y: 995,
+            W: 10,
+            H: 100
+        });
+        database.ref('AllDoors/R6rd').update({
+            Open: false,
+            X: 1100,
+            Y: 995,
+            W: 10,
+            H: 100
+        });
+        database.ref('AllDoors/MD').update({
+            Open: false,
+            X: 1180,
+            Y: -433,
+            W: 200,
+            H: 15
+        });
     }
 }
