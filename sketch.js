@@ -139,6 +139,10 @@ function draw() {
 
   drawSprites();
 
+  
+}
+
+function keyTyped() {
   if (gameState === 2) {
     // Player.getPlayerInfo();
     game.getDoorStatus();
