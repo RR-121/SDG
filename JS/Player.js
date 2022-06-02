@@ -2,8 +2,8 @@ class Player {
     constructor() {
         this.index = null;
         this.name = null;
-        this.posX = Math.round(random(0, 500));
-        this.posY = Math.round(random(0, 500));
+        this.posX = Math.round(random(3340, 3890));
+        this.posY = Math.round(random(-100, 690));
         this.videoEnded = false;
     }
 
