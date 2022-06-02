@@ -315,9 +315,9 @@ class Game {
         r5f.shapeColor = (255, 220, 210);
         r6f = createSprite(850, 702.5, 490, 685);
         r6f.shapeColor = (195, 195, 195);
-        labf1 = createSprite(3615, 215, 545, 625);
+        labf1 = createSprite(3690, 215, 695, 625);
         labf1.shapeColor = "whiteSmoke";
-        labf2 = createSprite(3713.75, 607.5, 347.5, 160)
+        labf2 = createSprite(3788.75, 607.5, 497.5, 160)
         labf2.shapeColor = "whiteSmoke";
 
         bed = createSprite(-272, -107.5, 100, 40);
@@ -482,6 +482,25 @@ class Game {
         r6shelf2.addImage(r6shelf2Img);
         r6shelf2.scale = 0.6;
 
+        labtbl1 = createSprite(3760, 420);
+        labtbl1.addImage(labtbl1Img);
+        labtbl1.scale = 0.7;
+
+        labtbl2 = createSprite(3990, 420);
+        labtbl2.addImage(labtbl2Img);
+        labtbl2.scale = 0.7;
+
+        labtbl3 = createSprite(3875, 130);
+        labtbl3.addImage(labtbl3Img);
+        labtbl3.scale = 0.7;
+
+        labshelf = createSprite(3690, -62);
+        labshelf.addImage(labshelfImg);
+        labshelf.scale = 0.8;
+
+        labcupboard = createSprite(3410, 348);
+        labcupboard.addImage(labcupboardImg);
+        labcupboard.scale = 0.65;
 
         p1 = createSprite(displayWidth / 2 - 100, displayHeight / 2 - 130);
         p1.addImage(p1Img);
@@ -610,13 +629,13 @@ class Game {
         house_uw4.shapeColor = "darkGrey";
 
         lab_lw = createSprite(3335, 295, 15, 800);
-        lab_lw.shapeColor = "whiteSmoke";
-        lab_rw = createSprite(3895, 295, 15, 800);
-        lab_rw.shapeColor = "whiteSmoke";
-        lab_bw = createSprite(3615, 695, 575, 15);
-        lab_bw.shapeColor = "whiteSmoke";
-        lab_uw = createSprite(3615, -105, 575, 15);
-        lab_uw.shapeColor = "whiteSmoke";
+        lab_lw.shapeColor = "ghostWhite";
+        lab_rw = createSprite(4045, 295, 15, 800);
+        lab_rw.shapeColor = "ghostWhite";
+        lab_bw = createSprite(3690, 695, 725, 15);
+        lab_bw.shapeColor = "ghostWhite";
+        lab_uw = createSprite(3690, -105, 725, 15);
+        lab_uw.shapeColor = "ghostWhite";
 
         // vr = createSprite(displayWidth / 2, displayHeight / 2 - 50);
         // vr.scale = 2;
@@ -705,7 +724,7 @@ class Game {
                 // vr.y = p1.y;
                 // console.log("Initial position of P1: " + p1.y)
                 if (keyIsDown(UP_ARROW)) {
-                    p1.velocityY = 5;
+                    p1.velocityY = -5;
                     player.posY = p1.y;
                     // vr.y = player.posY;
                     // console.log("P1's velocity Y: " + p1.velocityY);
