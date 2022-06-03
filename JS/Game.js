@@ -961,6 +961,15 @@ class Game {
         p1.bounceOff(r6cupboardr);
         p1.bounceOff(r6shelf1);
         p1.bounceOff(r6shelf2);
+        p1.bounceOff(labtbl1);
+        p1.bounceOff(labtbl2);
+        p1.bounceOff(labtbl3);
+        p1.bounceOff(labcupboard);
+        p1.bounceOff(labshelf);
+        p1.bounceOff(crate1Group);
+        p1.bounceOff(crate2Group);
+        p1.bounceOff(crate3Group);
+        p1.bounceOff(crate4Group);
 
         p2.bounceOff(r1_rw);
         p2.bounceOff(r1_bw);
@@ -1050,6 +1059,15 @@ class Game {
         p2.bounceOff(r6cupboardr);
         p2.bounceOff(r6shelf1);
         p2.bounceOff(r6shelf2);
+        p2.bounceOff(labtbl1);
+        p2.bounceOff(labtbl2);
+        p2.bounceOff(labtbl3);
+        p2.bounceOff(labcupboard);
+        p2.bounceOff(labshelf);
+        p2.bounceOff(crate1Group);
+        p2.bounceOff(crate2Group);
+        p2.bounceOff(crate3Group);
+        p2.bounceOff(crate4Group);
 
         p3.bounceOff(r1_rw);
         p3.bounceOff(r1_bw);
@@ -1139,6 +1157,15 @@ class Game {
         p3.bounceOff(r6cupboardr);
         p3.bounceOff(r6shelf1);
         p3.bounceOff(r6shelf2);
+        p3.bounceOff(labtbl1);
+        p3.bounceOff(labtbl2);
+        p3.bounceOff(labtbl3);
+        p3.bounceOff(labcupboard);
+        p3.bounceOff(labshelf);
+        p3.bounceOff(crate1Group);
+        p3.bounceOff(crate2Group);
+        p3.bounceOff(crate3Group);
+        p3.bounceOff(crate4Group);
 
         p4.bounceOff(r1_rw);
         p4.bounceOff(r1_bw);
@@ -1228,6 +1255,15 @@ class Game {
         p4.bounceOff(r6cupboardr);
         p4.bounceOff(r6shelf1);
         p4.bounceOff(r6shelf2);
+        p4.bounceOff(labtbl1);
+        p4.bounceOff(labtbl2);
+        p4.bounceOff(labtbl3);
+        p4.bounceOff(labcupboard);
+        p4.bounceOff(labshelf);
+        p4.bounceOff(crate1Group);
+        p4.bounceOff(crate2Group);
+        p4.bounceOff(crate3Group);
+        p4.bounceOff(crate4Group);
 
         drawSprites();
 
