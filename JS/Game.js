@@ -317,7 +317,7 @@ class Game {
         r6f.shapeColor = (195, 195, 195);
         labf1 = createSprite(3690, 215, 695, 625);
         labf1.shapeColor = "whiteSmoke";
-        labf2 = createSprite(3788.75, 607.5, 497.5, 160)
+        labf2 = createSprite(3782.25, 607.5, 510.5, 160)
         labf2.shapeColor = "whiteSmoke";
 
         bed = createSprite(-272, -107.5, 100, 40);
@@ -902,13 +902,13 @@ class Game {
         p1.bounceOff(r6_rw);
         p1.bounceOff(r6_uw);
         p1.bounceOff(stairs_bw);
-        // p1.bounceOff(stairs_d);
+        p1.bounceOff(stairs_d);
         p1.bounceOff(stairs_lw);
         p1.bounceOff(stairs_rw1);
         p1.bounceOff(stairs_rw2);
         p1.bounceOff(stairs_uw);
         p1.bounceOff(lab_stairs_bw);
-        // p1.bounceOff(lab_stairs_d);
+        p1.bounceOff(lab_stairs_d);
         p1.bounceOff(lab_stairs_lw);
         p1.bounceOff(lab_stairs_rw1);
         p1.bounceOff(lab_stairs_rw2);
@@ -1000,13 +1000,13 @@ class Game {
         p2.bounceOff(r6_rw);
         p2.bounceOff(r6_uw);
         p2.bounceOff(stairs_bw);
-        // p2.bounceOff(stairs_d);
+        p2.bounceOff(stairs_d);
         p2.bounceOff(stairs_lw);
         p2.bounceOff(stairs_rw1);
         p2.bounceOff(stairs_rw2);
         p2.bounceOff(stairs_uw);
         p2.bounceOff(lab_stairs_bw);
-        // p2.bounceOff(lab_stairs_d);
+        p2.bounceOff(lab_stairs_d);
         p2.bounceOff(lab_stairs_lw);
         p2.bounceOff(lab_stairs_rw1);
         p2.bounceOff(lab_stairs_rw2);
@@ -1098,13 +1098,13 @@ class Game {
         p3.bounceOff(r6_rw);
         p3.bounceOff(r6_uw);
         p3.bounceOff(stairs_bw);
-        // p3.bounceOff(stairs_d);
+        p3.bounceOff(stairs_d);
         p3.bounceOff(stairs_lw);
         p3.bounceOff(stairs_rw1);
         p3.bounceOff(stairs_rw2);
         p3.bounceOff(stairs_uw);
         p3.bounceOff(lab_stairs_bw);
-        // p3.bounceOff(lab_stairs_d);
+        p3.bounceOff(lab_stairs_d);
         p3.bounceOff(lab_stairs_lw);
         p3.bounceOff(lab_stairs_rw1);
         p3.bounceOff(lab_stairs_rw2);
@@ -1196,13 +1196,13 @@ class Game {
         p4.bounceOff(r6_rw);
         p4.bounceOff(r6_uw);
         p4.bounceOff(stairs_bw);
-        // p4.bounceOff(stairs_d);
+        p4.bounceOff(stairs_d);
         p4.bounceOff(stairs_lw);
         p4.bounceOff(stairs_rw1);
         p4.bounceOff(stairs_rw2);
         p4.bounceOff(stairs_uw);
         p4.bounceOff(lab_stairs_bw);
-        // p4.bounceOff(lab_stairs_d);
+        p4.bounceOff(lab_stairs_d);
         p4.bounceOff(lab_stairs_lw);
         p4.bounceOff(lab_stairs_rw1);
         p4.bounceOff(lab_stairs_rw2);
@@ -1405,6 +1405,36 @@ class Game {
         database.ref('AllDoors/MD/H').on("value", (data) => {
             house_md.height = data.val();
         })
+        database.ref('AllDoors/StairsD/Open').on("value", (data) => {
+            stairs_d_open = data.val();
+        })
+        database.ref('AllDoors/StairsD/X').on("value", (data) => {
+            stairs_d.x = data.val();
+        })
+        database.ref('AllDoors/StairsD/Y').on("value", (data) => {
+            stairs_d.y = data.val();
+        })
+        database.ref('AllDoors/StairsD/W').on("value", (data) => {
+            stairs_d.width = data.val();
+        })
+        database.ref('AllDoors/StairsD/H').on("value", (data) => {
+            stairs_d.height = data.val();
+        })      
+        database.ref('AllDoors/LabStairsD/Open').on("value", (data) => {
+            lab_stairs_d_open = data.val();
+        })
+        database.ref('AllDoors/LabStairsD/X').on("value", (data) => {
+            lab_stairs_d.x = data.val();
+        })
+        database.ref('AllDoors/LabStairsD/Y').on("value", (data) => {
+            lab_stairs_d.y = data.val();
+        })
+        database.ref('AllDoors/LabStairsD/W').on("value", (data) => {
+            lab_stairs_d.width = data.val();
+        })
+        database.ref('AllDoors/LabStairsD/H').on("value", (data) => {
+            lab_stairs_d.height = data.val();
+        })
     }
 
     updateR1d1Status(status, posX, posY, width, height) {
@@ -1481,7 +1511,25 @@ class Game {
     }
     updateMainDoorStatus(status, posX, posY, width, height) {
         database.ref('AllDoors/MD').update({
-            MainDoorOpen: status,
+            Open: status,
+            X: posX,
+            Y: posY,
+            W: width,
+            H: height
+        });
+    }
+    updateStairsDStatus(status, posX, posY, width, height) {
+        database.ref('AllDoors/StairsD').update({
+            Open: status,
+            X: posX,
+            Y: posY,
+            W: width,
+            H: height
+        });
+    }
+    updateLabStairsDStatus(status, posX, posY, width, height) {
+        database.ref('AllDoors/LabStairsD').update({
+            Open: status,
             X: posX,
             Y: posY,
             W: width,
@@ -1552,6 +1600,20 @@ class Game {
             Y: -433,
             W: 200,
             H: 15
+        });
+        database.ref('AllDoors/StairsD').update({
+            Open: false,
+            X: -212.5,
+            Y: 526,
+            W: 15,
+            H: 100
+        });
+        database.ref('AllDoors/LabStairsD').update({
+            Open: false,
+            X: 3532.5,
+            Y: 606,
+            W: 15,
+            H: 100
         });
     }
 }
