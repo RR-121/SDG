@@ -1456,7 +1456,7 @@ class Game {
         })
         database.ref('AllDoors/StairsD/H').on("value", (data) => {
             stairs_d.height = data.val();
-        })      
+        })
         database.ref('AllDoors/LabStairsD/Open').on("value", (data) => {
             lab_stairs_d_open = data.val();
         })
@@ -1471,6 +1471,26 @@ class Game {
         })
         database.ref('AllDoors/LabStairsD/H').on("value", (data) => {
             lab_stairs_d.height = data.val();
+        })
+    }
+    getKeysStatus() {
+        database.ref('MK1collected').on("value", (data) => {
+            mk1collected = data;
+        })
+        database.ref('MK2collected').on("value", (data) => {
+            mk2collected = data;
+        })
+        database.ref('MK3collected').on("value", (data) => {
+            mk3collected = data;
+        })
+        database.ref('SKcollected').on("value", (data) => {
+            skeycollected = data;
+        })
+        database.ref('V1collected').on("value", (data) => {
+            vial1collected = data;
+        })
+        database.ref('V2collected').on("value", (data) => {
+            vial2collected = data;
         })
     }
 
@@ -1574,6 +1594,37 @@ class Game {
         });
     }
 
+    updateMK1Status(status) {
+        database.ref('/').update({
+            MK1collected: status
+        })
+    }
+    updateMK2Status(status) {
+        database.ref('/').update({
+            MK2collected: status
+        })
+    }
+    updateMK3Status(status) {
+        database.ref('/').update({
+            MK3collected: status
+        })
+    }
+    updateSKStatus(status) {
+        database.ref('/').update({
+            SKcollected: status
+        })
+    }
+    updateV1Status(status) {
+        database.ref('/').update({
+            V1collected: status
+        })
+    }
+    updateV2Status(status) {
+        database.ref('/').update({
+            V2collected: status
+        })
+    }
+
     static resetDoorStatus() {
         database.ref('AllDoors/R1d1').update({
             Open: false,
@@ -1652,5 +1703,15 @@ class Game {
             W: 15,
             H: 100
         });
+    }
+    static resetkeys() {
+        database.ref('/').update({
+            MK1collected: false,
+            MK2collected: false,
+            MK3collected: false,
+            SKcollected: false,
+            V1collected: false,
+            V2collected: false
+        })
     }
 }
