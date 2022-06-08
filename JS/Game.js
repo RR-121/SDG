@@ -502,6 +502,43 @@ class Game {
         labcupboard.addImage(labcupboardImg);
         labcupboard.scale = 0.65;
 
+        crate5 = createSprite(3987, 640);
+        crate5.addImage(crateImg);
+        crate5.scale = 0.8;
+
+        crate6 = createSprite(3877, 640);
+        crate6.addImage(crateImg);
+        crate6.scale = 0.8;
+
+        crate7 = createSprite(3400, 20);
+        crate7.addImage(crateImg);
+        crate7.scale = 0.8;
+
+        crate8 = createSprite(3400, 120);
+        crate8.addImage(crateImg);
+        crate8.scale = 0.8;
+
+        crate9 = createSprite(3988, 30);
+        crate9.addImage(crateImg);
+        crate9.scale = 0.8;
+
+        crate10 = createSprite(3878, 30);
+        crate10.addImage(crateImg);
+        crate10.scale = 0.8;
+
+        var crateArray = [[crate5.x, crate5.y], [crate6.x, crate6.y], [crate7.x, crate7.y], [crate8.x, crate8.y], [crate9.x, crate9.y], [crate10.x, crate10.y]];
+        var rand1 = Math.round(random(0, 5));
+        var rand2 = Math.round(random(0, 5));
+        vial1 = createSprite(crateArray[rand1][0], crateArray[rand1][1]);
+        vial1.addImage(vialImg);
+        vial1.scale = 0.9;
+        vial1.visible = false;
+
+        mainkey1 = createSprite(crateArray[rand2][0], crateArray[rand2][1]);
+        mainkey1.addImage(mainkeyImg);
+        mainkey1.scale = 0.8;
+        mainkey1.visible = false;
+
         p1 = createSprite(displayWidth / 2 - 100, displayHeight / 2 - 130);
         p1.addImage(p1Img);
         p2 = createSprite(displayWidth / 2 + 100, displayHeight / 2 - 130);
