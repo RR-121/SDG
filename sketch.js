@@ -31,6 +31,12 @@ var crate1, crate2, crate3, crate4, crate5, crate6, crate7, crate8, crate9, crat
 var crate1Group, crate2Group, crate3Group, crate4Group;
 var vial1, vial2, vialImg;
 var skey, mainkey1, mainkey2, mainkey3, skeyImg, mainkeyImg;
+var vial1collected = false;
+var vial2collected = false;
+var skeycollected = false;
+var mk1collected = false;
+var mk2collected = false;
+var mk3collected = false;
 
 p5.disableFriendlyErrors = true;
 
@@ -743,6 +749,12 @@ function crates_1() {
 
     crate1Group.add(crate1);
   }
+  if (frameCount % 2600 === 0 && skeycollected === false) {
+    skey = createSprite(crate1.x, crate1.y);
+    skey.addImage(skeyImg);
+    // skey.visible = false;
+    skey.lifetime = 1300;
+  }
 }
 function crates_2() {
   if (frameCount % 1300 === 0) {
@@ -853,8 +865,15 @@ function crates_2() {
     crate2.bounceOff(p2);
     crate2.bounceOff(p3);
     crate2.bounceOff(p4);
-    
+
     crate2Group.add(crate2);
+  }
+  if (frameCount % 3900 === 0 && mk2collected === false) {
+    mainkey2 = createSprite(crate2.x, crate2.y);
+    mainkey2.addImage(mainkeyImg);
+    mainkey2.scale = 0.8;
+    // mainkey2.visible = false;
+    mainkey2.lifetime = 1300;
   }
 }
 function crates_3() {
@@ -966,8 +985,16 @@ function crates_3() {
     crate3.bounceOff(p2);
     crate3.bounceOff(p3);
     crate3.bounceOff(p4);
-    
+
     crate3Group.add(crate3);
+
+    if (frameCount % 3900 === 0 && mk3collected === false) {
+      mainkey3 = createSprite(crate3.x, crate3.y);
+      mainkey3.addImage(mainkeyImg);
+      mainkey3.scale = 0.8;
+      // mainkey3.visible = false;
+      mainkey3.lifetime = 1300;
+    }
   }
 }
 function crates_4() {
@@ -1079,7 +1106,14 @@ function crates_4() {
     crate4.bounceOff(p2);
     crate4.bounceOff(p3);
     crate4.bounceOff(p4);
-    
+
     crate4Group.add(crate4);
+    if (frameCount % 5200 === 0 && vial2collected === false) {
+      vial2 = createSprite(crate4.x, crate4.y);
+      vial2.addImage(vialImg);
+      vial2.scale = 0.9;
+      // vial2.visible = false;
+      vial2.lifetime = 1300;
+    }
   }
 }
