@@ -27,7 +27,7 @@ var diningt, diningtImg, r6cupboardl, r6cupboardlImg, r6cupboardr, r6cupboardrIm
 var labtbl1, labtbl1Img, labtbl2, labtbl2Img, labtbl3, labtbl3Img, labcupboard, labcupboardImg, labshelf, labshelfImg;
 
 // Crates, vials, keys:
-var crate1, crate2, crate3, crate4, crateImg;
+var crate1, crate2, crate3, crate4, crate5, crate6, crate7, crate8, crate9, crate10, crateImg;
 var crate1Group, crate2Group, crate3Group, crate4Group;
 var vial1, vial2, vialImg;
 var skey, mainkey1, mainkey2, mainkey3, skeyImg, mainkeyImg;
